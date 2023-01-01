@@ -7,7 +7,7 @@ export const projectButton = [
     {
         id : 1 ,
         name : "All",
-        value : "all"
+        value : "all",
     },
     {
         id : 2 ,
@@ -35,7 +35,7 @@ export const projectData =[
         id : 1 ,
         projectImage : img1 ,
         projectName : "Orebi Ecommerce",
-        projectDesc : "This Is a Multi Vendor's E-Commerce This Is a Multi Vendor's E-Commerce This Is a Multi Vendor's E-Commerce",
+        projectDesc : "This Is a Multi Vendor's E-Commerce bwehc wejjk ejkd  jjkdnw qjk jkdbkj n iqndjkw j 32jd  jd 1j mq jdqjd qwjkndqwnjdqw dqjdjqw djkq d qws ",
         liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
         sourceLink : "https://vercel.com/tuhin-ahammeds-projects" ,
         category : "all"

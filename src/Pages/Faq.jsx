@@ -3,12 +3,16 @@ import Container from '../Layout/Container'
 import CardBox from '../Layout/CardBox'
 import { FaqData } from "../Components/Faq/FaqData"
 import MinTitle from '../Layout/MinTitle';
+import MidTitle from '../Layout/MidTitle';
 import LargeTitle from '../Layout/LargeTitle';
-
+import Button from '../Layout/Button';
+import img from "../assets/profile.jpeg"
 import { FaMinus, FaPlus } from 'react-icons/fa6';
 
-import img from "../assets/profile.jpeg"
-console.log(FaqData);
+import agency from "../assets/object.jpeg"
+import TestimonialSlider from '../Components/Faq/TestimonialSlider';
+
+
 const Faq = () => {
     const [active, setActive] = useState(null)
     const handleClick = (index) => {
@@ -50,9 +54,17 @@ const Faq = () => {
 
                     </div>
                     <div className='lg:col-span-2 '>
-                        <LargeTitle text="??"/>
+                        <img src={agency} alt="" className='rounded-full mt-4 lg:mt-0 w-[50%] lg:w-[65%] m-auto'/>
+                        <div className='flex justify-between items-center lg:mt-6 '>
+                        <MidTitle text="Know About ObJect ??"/>
+                        <Button text="Go" directLink={"https://www.facebook.com/objectJS"}/>
+                        </div>
+                        
                     </div>
                 </div>
+                
+                    <TestimonialSlider />
+                
             </Container>
         </div>
     )

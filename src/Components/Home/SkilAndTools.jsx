@@ -22,60 +22,74 @@ import ExpressIcon from "../../assets/express.png"
 import GithubIcon from "../../assets/github.png"
 import FigmaIcon from "../../assets/figma.png"
 import CnavaIcon from "../../assets/canva.png"
+
+const skilledData = [
+    {
+        skilName: "HTML-5",
+    },
+    {
+        skilName: "CSS",
+    },
+    {
+        skilName: "Bootstrap",
+    },
+    {
+        skilName: "Tailwind",
+    },
+    {
+        skilName: "Bootstrap",
+    },
+    {
+        skilName: "React JS",
+    },
+    {
+        skilName: "Redux",
+    },
+    {
+        skilName: "React Router",
+    },
+    {
+        skilName: "Firebase",
+    },
+    {
+        skilName: "MongoDB",
+    },
+    {
+        skilName: "Node JS",
+    },
+    {
+        skilName: "Express JS",
+    },
+    {
+        skilName: "Rest API Development",
+    },
+    {
+        skilName: "React Native",
+    },
+    {
+        skilName: "Figma",
+    },
+    {
+        skilName: "Canva",
+    },
+]
 const SkilAndTools = ({ className }) => {
     return (
         <div className={`${className}`}>
             <MidTitle text="Skill & Tools" className=" duration-300" />
             <SlidingSection className="text py-5">
                 <Flex className="items-center gap-4 mt-4">
-                    <SkiledItemText text="HTML-5" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="CSS" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Bootstrap" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Tailwind" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="And Design" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="React JS" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Redux" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="React Router" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Firebase" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="MongoDB" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Node JS" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Express JS" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Rest API Development" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="React Native" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Figma" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
-                    <SkiledItemText text="Canva" className="">
-                        {/* <GoMoveToEnd /> */}
-                    </SkiledItemText>
+                    {
+                        skilledData.map((item , id) => {
+                            const {skilName} = item
+                            return (
+                                <SkiledItemText text={skilName} className="" key={id}>
+                                    {/* <GoMoveToEnd /> */}
+                                </SkiledItemText>
+                            )
+                        })
+                    }
+
                 </Flex>
             </SlidingSection>
             <SlidingSection className="icon " direction="right" >

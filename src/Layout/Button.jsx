@@ -6,9 +6,8 @@ import { Link } from 'react-router-dom'
 const Button = ({text , className , directLink , onClick , value}) => {
   return (
     <div className={``}>
-      <Link to={directLink}>
+      <Link to={directLink} target='_blank'>
       <button onClick={onClick} value={value} className={`text-primary px-4 py-1 md:px-6 md:py-3 lg:px-6 lg:py-3 rounded-full border-2 border-theme bg-theme hover:bg-transparent hover:text-theme transition-all duration-300 ${className}`}>{text}</button>
-
       </Link>
     </div>
   )
