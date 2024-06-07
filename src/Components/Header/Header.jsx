@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Container from '../Layout/Container'
-import Logo from "../assets/Logo.png"
-import Button from '../Layout/Button'
+
+import Logo from "../../assets/Logo.png"
+import Button from '../../Layout/Button'
+import Container from '../../Layout/Container'
 const Header = () => {
   return (
-    <div>
+    <div className=''>
       <Container className="">
         <nav className='w-[100%] flex justify-between items-center text-primary  py-4 px-9 text-base bg-quaternary rounded-2xl border-2 border-tertiary font-semibold tracking-sm'>
           <div className="logo w-[25%]">

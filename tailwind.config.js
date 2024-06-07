@@ -15,8 +15,9 @@ export default {
         secondary : "#0D0A0D" ,
         tertiary : "#3F4143", //border
         quaternary : "#222426" , // header
-        background : "#24130E" , // root background 
-        senary : "#141316" // profile box
+        background : "#24130E" , // index.jss background 
+        senary : "#141316" , // profile box
+        textSecondary : "#B3B6B9"
       },
       fontFamily : {
         primary: ['Kanit', 'sans-serif'],
@@ -26,7 +27,7 @@ export default {
         lg : "18px",   // 18px
         xl: "20px",    // 20px
         "2xl" : "24px" ,
-        "3xl" : "30px",
+        "3xl" : "28px",
         "4xl" : "40px",
         "5xl" : "48px" ,
         "5xl" : "60px"

@@ -1,27 +1,75 @@
 import React from 'react'
-import Header from '../Components/Header'
+import Header from '../Components/Header/Header'
 import Container from '../Layout/Container'
 import Button from '../Layout/Button'
 import MinTitle from '../Layout/MinTitle'
-import ProfileSection from '../Components/Profile'
-import ServiceOfering from '../Components/ServiceOfering'
+import ProfileSection from '../Components/Home/Profile'
+import ArticleSection from '../Components/Home/ArticleSection'
+import CardBox from '../Layout/CardBox'
+import SummarySection from '../Components/Home/SummarySection'
+import SlidingSection from '../Layout/SlidingSection'
+import Logo from "../assets/Logo.png"
+import ExprienceSection from '../Components/Home/ExprienceSection'
+import { GoMoveToEnd } from 'react-icons/go'
+import SocialProfile from '../Components/Home/SocialProfile'
+import ServicesOffering from '../Components/Home/ServicesOffering'
+import SkilAndTools from '../Components/Home/SkilAndTools'
+import Flex from '../Layout/Flex'
+import WorksWith from '../Components/Home/WorksWith'
+import LatestWorks from '../Components/Home/LatestWorks'
 const Home = () => {
   return (
     <div className='py-5'>
+      {/* */}
       <Container>
-        <div className="flex justify-between gap-x-5">
+        <div className="innerHome flex gap-5 py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
 
-          <div className="leftProfile p-6 bg-senary w-[25%] border-2 border-tertiary rounded-xl mx-auto">
-          <ProfileSection/>
+          <div className="leftProfile lg:col-span-1 md:col-span-1">
+            <CardBox className="">
+              <ProfileSection />
+            </CardBox>
+            <CardBox className="articles mt-5">
+              <ArticleSection />
+            </CardBox>
           </div>
-          <div className="middle w-[50%]">
-            <div className="innerSummmarySocial flex justify-between gap-5 rounded-xl">
-              <div className="summary w-[50%] rounded-xl h-[200px] border-2 border-tertiary">ok</div>
-              <div className="social w-[50%] rounded-xl h-[200px] border-2 border-tertiary">ok</div>
+          <div className="middle lg:col-span-2 md:col-span-1">
+            <div className="innerSummmarySocial flex grid lg:grid-cols-2 grid-cols-1 gap-5">
+
+              <CardBox className="">
+                <SummarySection />
+              </CardBox>
+
+              <CardBox className="">
+                <SocialProfile />
+              </CardBox>
             </div>
-            <ServiceOfering/>
+            <CardBox className="mt-5 group transition  delay-1000">
+              <ServicesOffering />
+            </CardBox>
           </div>
-          <div className="right w-[25%] border-2 border-tertiary rounded-xl"></div>
+          <div className="right lg:col-span-1 md:col-span-1">
+            <CardBox className="">
+              <SlidingSection text="See My Latest Work" direction="left" className="text-base uppercase text-textSecondary">
+                <GoMoveToEnd className='text-primary text-2xl group-hover:text-theme' />
+              </SlidingSection>
+            </CardBox>
+            <CardBox className="articles mt-5 !py-[33px] !cursor-default">
+              <ExprienceSection />
+            </CardBox>
+          </div>
+        </div>
+        <div className="secondPart ">
+          <Flex className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <CardBox className="lg:col-span-2">
+              <SkilAndTools />
+            </CardBox>
+            <CardBox className="lg:col-span-1">
+              <WorksWith />
+            </CardBox>
+            <CardBox className="lg:col-span-1">
+              <LatestWorks />
+            </CardBox>
+          </Flex>
         </div>
       </Container>
     </div>

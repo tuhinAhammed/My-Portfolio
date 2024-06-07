@@ -3,6 +3,14 @@
 @tailwind utilities;
 *{
     font-family: 'Kanit', 'sans-serif' ;
+    letter-spacing: 1px;
+    /* h-[100vh] bg-background */
+}
+.dark{
+    background-color: #24130E;
+}
+.light{
+    background-color: #fff3ef;
 }
 .active {
     color: #9948FF;
