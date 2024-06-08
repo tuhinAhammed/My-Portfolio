@@ -17,6 +17,7 @@ const Header = () => {
             <NavLink to={"/about"} className="hover:text-theme"> About </NavLink>
             <NavLink to={"/project"} className="hover:text-theme"> Project </NavLink>
             <NavLink to={"/pages"} className="hover:text-theme"> Pages </NavLink>
+            <NavLink to={"/services"} className="hover:text-theme"> Services </NavLink>
             <NavLink to={"/contact"} className="hover:text-theme"> Contact </NavLink>
           </div>
           <div className="contact w-[25%] flex justify-end items-center gap-x-2">
