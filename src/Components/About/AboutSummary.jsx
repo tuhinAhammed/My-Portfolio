@@ -6,7 +6,7 @@ const AboutSummary = ({ className }) => {
     return (
         <div className={`${className}`}>
             <MidTitle text="Hello, I am Tuhin Ahammed Shuvo," />
-            <MinTitle className="!text-textSecondary py-" text="Accomplished Full Stack Web Developer with a strong foundation in both frontend and backend development. With 4
+            <MinTitle className="!text-textSecondary pt-7" text="Accomplished Full Stack Web Developer with a strong foundation in both frontend and backend development. With 4
 years of experience in web design and 2 years specializing in MERN stack development, I possess a diverse skill set
 and a passion for leveraging technology to solve complex problems. As a proactive learner, I am constantly exploring
 new technologies and best practices to stay ahead in the ever-evolving field of web development. Skilled in MongoDB,

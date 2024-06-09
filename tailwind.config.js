@@ -23,6 +23,8 @@ export default {
         primary: ['Kanit', 'sans-serif'],
       },
       fontSize : {
+        extraSm : "12px" ,
+        sm : "14px" ,
         base : "16px", // 16px
         lg : "18px",   // 18px
         xl: "20px",    // 20px

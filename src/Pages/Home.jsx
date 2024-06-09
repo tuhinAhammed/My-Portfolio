@@ -43,13 +43,13 @@ const Home = () => {
                 <SocialProfile />
               </CardBox>
             </div>
-            <CardBox className="mt-5 group transition  delay-1000">
-              <ServicesOffering />
+            <CardBox className=" mt-5 group transition  delay-1000">
+              <ServicesOffering /> 
             </CardBox>
           </div>
           <div className="right lg:col-span-1 md:col-span-1">
             <CardBox className="">
-              <SlidingSection text="See My Latest Work" direction="left" className="text-base uppercase text-textSecondary">
+              <SlidingSection text="See My Latest Work" direction="left" className="text-base uppercase text-textSecondary leading-[0px]">
                 <GoMoveToEnd className='text-primary text-2xl group-hover:text-theme' />
               </SlidingSection>
             </CardBox>

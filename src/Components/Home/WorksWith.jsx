@@ -8,18 +8,37 @@ import { CiLinkedin } from 'react-icons/ci'
 import { FaGithub } from "react-icons/fa";
 import { TbBrandGithubFilled, TbView360 } from 'react-icons/tb'
 import { LuGithub } from 'react-icons/lu'
+import SocialHover from "../../assets/social-hover.png"
+import { Link } from 'react-router-dom'
+
 const WorksWith = ({className}) => {
   return (
     <div className={`color-primary ${className}`}>
     <MidTitle text="Works with &" className="group-hover:text-theme duration-300" />
     <MidTitle text="Object" className="text-right" />
     <Flex className=" py-4  justify-center gap-4 itmes-center">
-        <a href="https://github.com/tuhinAhammed/" target="_blank">
+    <Link to="https://github.com/tuhinAhammed/" target="_blank" className='relative group transition-transform '>
+          <div className='w-[121%] lg:top-[-7px] lg:left-[-7px] sm:top-[-7px] sm:left-[-7px] top-[-7px] left-[-7px] absolute  '>
+            <img src={SocialHover} alt="" className='rounded-full opacity-0 group-hover:opacity-100 group-hover:rotate-[50deg] duration-500 ' />
+          </div>
+          <div className=''>
+          <LuGithub className='text-primary text-6xl lg:text-7xl p-4 lg:p-5 group-hover:border-none border-2 border-tertiary rounded-full group-hover:text-theme' />
+          </div>
+        </Link>
+    <Link to="https://vercel.com/tuhin-ahammeds-projects" target="_blank" className='relative group transition-transform '>
+          <div className='w-[121%] lg:top-[-7px] lg:left-[-7px] sm:top-[-7px] sm:left-[-7px] top-[-7px] left-[-7px] absolute  '>
+            <img src={SocialHover} alt="" className='rounded-full opacity-0 group-hover:opacity-100 group-hover:rotate-[50deg] duration-500 ' />
+          </div>
+          <div className=''>
+          <TbView360 className='text-primary text-6xl lg:text-7xl p-4 lg:p-5 group-hover:border-none border-2 border-tertiary rounded-full group-hover:text-theme' />
+          </div>
+        </Link>
+        {/* <a href="https://github.com/tuhinAhammed/" target="_blank">
           <LuGithub  className='text-primary text-7xl p-4  border-2 border-tertiary rounded-full hover:text-theme' />
         </a>
         <a href="https://vercel.com/tuhin-ahammeds-projects" target="_blank">
           <TbView360  className='text-primary text-7xl p-4  border-2 border-tertiary rounded-full hover:text-theme' />
-        </a>
+        </a> */}
       </Flex>
     <Flex className="worksWith cursor-pointer mt-[13px]  justify-between items-center  group transition  delay-1000">
         <MinTitle text="Get In Touth" className="group-hover:text-theme  " />

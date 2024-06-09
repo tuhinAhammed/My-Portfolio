@@ -82,42 +82,42 @@ const SkilAndTools = ({ className }) => {
                 <Flex className=" gap-4 mt-4 items-center">
 
 
-                        <img src={CnavaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={CnavaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={FigmaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={FigmaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={GithubIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={GithubIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={ExpressIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={ExpressIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={NodeJsIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={NodeJsIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={MongoDbIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
+                    <img src={MongoDbIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
 
-                        <img src={ReduxIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={ReduxIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
-                        <img src={ReactIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-                        <img src={JavascriptIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={ReactIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
 
-
-                        <img src={TailwindIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-                        <img src={BootstrapIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-   
-
-
-                        <img src={CssIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={JavascriptIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
 
 
-                        <img src={HtmlIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
+                    <img src={TailwindIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
 
 
-                        <img src={HtmlIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    <img src={BootstrapIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+
+
+
+                    <img src={CssIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+
+
+
+                    <img src={HtmlIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
+
+
+                    <img src={HtmlIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
                 </Flex>
             </SlidingSection>
 

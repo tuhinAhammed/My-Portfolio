@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardBox = ({className , children}) => {
   return (
-    <div className={`p-6 bg-senary border-2 border-tertiary rounded-xl cursor-default rounded-xl  ${className}`}>{children}</div>
+    <div className={`p-6 bg-senary  rounded-xl border-2 border-tertiary cursor-default rounded-xl  ${className}`}>{children}</div>
   )
 }
 

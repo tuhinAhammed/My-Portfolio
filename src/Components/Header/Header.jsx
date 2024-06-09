@@ -1,9 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 import Logo from "../../assets/Logo.png"
 import Button from '../../Layout/Button'
 import Container from '../../Layout/Container'
+import SecondaryButton from '../../Layout/SecondaryButton'
+import Flex from '../../Layout/Flex'
 const Header = () => {
   return (
     <div className=''>
@@ -21,8 +23,12 @@ const Header = () => {
             <NavLink to={"/contact"} className="hover:text-theme"> Contact </NavLink>
           </div>
           <div className="contact w-[25%] flex justify-end items-center gap-x-2">
-            <NavLink to={"/"}> <Button text="Let's Talk"/> </NavLink>
-            <NavLink to={"/"}> <Button text="+"/></NavLink>
+            <Link to={"/contact"} className="group">
+              <Flex className="items-center gap-x-2">
+              <Button text="Let's Talk"/> 
+              <SecondaryButton/>
+              </Flex>
+            </Link>
           </div>
         </nav>
       </Container>

@@ -13,6 +13,7 @@ import Backend from "../../assets/backend.gif"
 import Api from "../../assets/api.gif"
 import App from "../../assets/app.gif"
 import { BiSolidLike } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 const ServicesOffering = ({ className }) => {
     return (
@@ -46,10 +47,12 @@ const ServicesOffering = ({ className }) => {
                 <MidTitle text="Things I'am good at" className="!text-[30px]" />
                 <BiSolidLike className='text-5xl text-theme group-hover:ml-6 duration-300' />
             </Flex>
-            <Flex className="action cursor-pointer justify-between items-center">
+            <Link to ="/services">
+            <Flex className=" action cursor-pointer justify-between items-center">
                 <MinTitle text="All Services" className="group-hover:text-theme" />
                 <GoMoveToEnd className='text-primary text-2xl group-hover:text-theme' />
             </Flex>
+            </Link>
         </div>
     )
 }
