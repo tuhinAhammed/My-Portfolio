@@ -45,7 +45,7 @@ const Header = () => {
   } 
   return (
 
-    <div className=''>
+    <div className='mb-[108px]'>
       <Container className="">
         <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[200px]   border-2 border-tertiary font-semibold shadow-xl fixed w-[85%] z-50 md:rounded-lg  ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
           <div className="" >

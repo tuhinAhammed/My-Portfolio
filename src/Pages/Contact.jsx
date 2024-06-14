@@ -7,7 +7,7 @@ import Container from '../Layout/Container'
 import SocialLink from '../Components/Contact/SocialLink'
 const Contact = () => {
   return (
-    <div className="py-5">
+    <div className="">
       <Container>
         <Flex className=" gap-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
           <CardBox className="lg:col-span-1 col-span-3">

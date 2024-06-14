@@ -43,7 +43,7 @@ const SocialLink = (className) => {
 
     return (
         <div className={`mt-5 ${className}`}>
-            <Flex className={`items-center grid gap-1 sm:gap-2 md:gap-3 lg:gap-4 grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-${gridNumber}`}>
+            <Flex className={`items-center grid gap-1 sm:gap-2 md:gap-3 lg:gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-${gridNumber}`}>
                 {
                     socialPlatforms.map((item , index) => (
 

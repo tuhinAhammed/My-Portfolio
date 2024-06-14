@@ -19,7 +19,7 @@ import { FaWordpressSimple } from 'react-icons/fa6'
 import ServiceIcon from '../Components/Service/ServiceIcon'
 const Services = () => {
     return (
-        <div className="py-6">
+        <div className="">
             <Container>
                 <Flex className="gap-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <CardBox className="group">

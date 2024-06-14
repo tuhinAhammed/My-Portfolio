@@ -19,10 +19,10 @@ import WorksWith from '../Components/Home/WorksWith'
 import LatestWorks from '../Components/Home/LatestWorks'
 const Home = () => {
   return (
-    <div className='py-5'>
+    <div className=' '>
       {/* */}
       <Container>
-        <div className="innerHome flex gap-5 py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+        <div className="innerHome flex gap-5  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
 
           <div className="leftProfile lg:col-span-1 md:col-span-1">
             <CardBox className="">
@@ -58,7 +58,7 @@ const Home = () => {
             </CardBox>
           </div>
         </div>
-        <div className="secondPart ">
+        <div className="secondPart mt-5">
           <Flex className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             <CardBox className="lg:col-span-2">
               <SkilAndTools />
