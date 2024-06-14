@@ -44,67 +44,34 @@ const Header = () => {
     console.log(open);
   } 
   return (
+
     <div className=''>
-    <Container className="relative z-50">
-      <nav className='w-[85%] flex justify-between items-center py-4 px-6 border-2 border-tertiary fixed backdrop-blur-[100px]' >
-        <div className="" >
-          <NavLink to={"/"} > <img src={Logo} className="w-[120px]" alt="" /> </NavLink>
-        </div>
-        <div onClick={handleClick} className='absolute top-[30%] right-6 cursor-pointer md:hidden text-md text-theme  border-[1px] border-theme rounded-sm font-extrabold p-1 '>
-          {
-            open ? <RxCross2/> : <HiOutlineMenuAlt1/>
-          }
-        </div>
-        <ul className={`menu md:flex hidden items-center text-primary px-4 block` }>
-          {
-            Links.map((link , index) => (
-          <li className='px-4'><NavLink to={link.link} className="hover:text-theme"> {link.name} </NavLink></li>
-            ))
-          }
-        <li className="md:mt-0 mt-5">
-        <NavLink ><PrimaryButton link = "contact" text="Let's Talk"/></NavLink>
-        </li>
-          
-        </ul>
+      <Container className="">
+        <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[200px]   border-2 border-tertiary font-semibold shadow-xl fixed w-[85%] z-50 md:rounded-lg  ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
+          <div className="" >
+            <NavLink to={"/"} > <img src={Logo} className="w-[80px] md:w-[120px]" alt="" /> </NavLink>
+          </div>
+          <div onClick={handleClick} className='absolute top-3 right-6 cursor-pointer md:hidden text-md text-theme  border-[1px] border-theme rounded-sm font-extrabold p-1 '>
+            {
+              open ? <RxCross2/> : <HiOutlineMenuAlt1/>
+            }
+          </div>
+          <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent  bg-quaternary pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100 ` : `right-[-100%] opacity-0 md:opacity-100 `} `}>
+            {
+              Links.map((link , index) => (
+            <li className='md:py-0 py-2'><NavLink to={link.link} className="hover:text-theme"> {link.name} </NavLink></li>
 
-        {
-          open ?  <div className=''>
-<p className='text-primary'>okkkkkkkk</p>
-          </div> : <p className='text-primary'>nott</p>
-        }
-
-      </nav>
-
-    </Container>
-
-  </div>
-    // <div className=''>
-    //   <Container className="">
-    //     <nav className='md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[200px]   border-2 border-tertiary font-semibold shadow-xl fixed w-[85%] z-50 md:rounded-lg rounded-t-lg' >
-    //       <div className="" >
-    //         <NavLink to={"/"} > <img src={Logo} className="w-[80px] md:w-[120px]" alt="" /> </NavLink>
-    //       </div>
-    //       <div onClick={handleClick} className='absolute top-3 right-6 cursor-pointer md:hidden text-md text-theme  border-[1px] border-theme rounded-sm font-extrabold p-1 '>
-    //         {
-    //           open ? <RxCross2/> : <HiOutlineMenuAlt1/>
-    //         }
-    //       </div>
-    //       <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-500 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent bg-senary pl-5 top-[100%] md:top-[0] ${open ? `right-[0%] md:right-0 opacity-100` : `right-[-100%] opacity-0 md:opacity-100 `} `}>
-    //         {
-    //           Links.map((link , index) => (
-    //         <li className='md:py-0 py-2'><NavLink to={link.link} className="hover:text-theme"> {link.name} </NavLink></li>
-
-    //           ))
-    //         }
-    //       <li className="md:mt-0 mt-5">
-    //       <NavLink ><PrimaryButton link = "contact" text="Let's Talk"/></NavLink>
-    //       </li>
+              ))
+            }
+          <li className="md:mt-0 mt-5">
+          <NavLink ><PrimaryButton link = "contact" text="Let's Talk"/></NavLink>
+          </li>
             
-    //       </ul>
+          </ul>
 
-    //     </nav>
-    //   </Container>
-    // </div>
+        </nav>
+      </Container>
+    </div>
   )
 }
 
