@@ -7,20 +7,55 @@ import { MdDownloadForOffline } from 'react-icons/md'
 import { FaDownload } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
+// react toastify
+import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import resume from "../../assets/Resume/tuhinResume.pdf"
 const SummarySection = () => {
+  const handleDownload = () => {
+    setTimeout(() => {
+      toast.success("Tuhin's Resume is Successfully Download !", {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "#9948FF",
+        transition: Bounce,
+        });
+    }, 1000);
+
+
+    
+  }
   return (
     <div className='color-primary '>
-            <MidTitle text="Title" className="group-hover:text-theme text-theme " />
-            <MidTitle text="MERN Stack" className=" text-3xl group-hover:text-theme duration-300" />
-            <MidTitle text="Developer" className="text-right text-3xl opacity-[0.5] z-auto"/>
-            <a href={resume} download>
-            <div className="resume cursor-pointer flex justify-between items-center mt-5 group transition  delay-1000">
-            <MinTitle text="My Resume" className="group-hover:text-theme duration-300" />
-            <FaDownload className='text-2xl text-primary group-hover:text-theme' />
-            </div>
-            </a>
+      <MidTitle text="Title" className="group-hover:text-theme text-theme " />
+      <MidTitle text="MERN Stack" className=" text-3xl group-hover:text-theme duration-300" />
+      <MidTitle text="Developer" className="text-right text-3xl opacity-[0.5] z-auto" />
+      <a href={resume} download onClick={handleDownload}>
+        <div className="resume cursor-pointer flex justify-between items-center mt-5 group transition  delay-1000">
+          <MinTitle text="My Resume" className="group-hover:text-theme duration-300" />
+          <FaDownload className='text-2xl animate-bounce text-primary group-hover:text-theme' />
         </div>
+      </a>
+      <ToastContainer className="bg-theme"
+position="bottom-center"
+autoClose={2000}
+hideProgressBar
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="#9948FF"
+transition : Bounce
+/>
+    </div>
   )
 }
 
