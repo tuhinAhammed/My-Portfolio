@@ -1,4 +1,8 @@
 import img1 from "../../assets/profile.jpeg"
+import img2 from "../../assets/frontend.gif"
+import img3 from "../../assets/backend.gif"
+import img4 from "../../assets/node.png"
+
 export const projectButton = [
     {
         id : 1 ,
@@ -8,7 +12,7 @@ export const projectButton = [
     {
         id : 2 ,
         name : "UI/UX",
-        value : "ui/ux"
+        value : "ui"
     },
     {
         id : 3 ,
@@ -38,47 +42,47 @@ export const projectData =[
     },
     {
         id : 2 ,
-        projectImage : img1 ,
+        projectImage : img2 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
         liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
         sourceLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        category : "all"
+        category : "ui"
     },
     {
         id : 3 ,
-        projectImage : img1 ,
+        projectImage : img3 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
         liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
         sourceLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        category : "all"
+        category : "ui"
     },
     {
         id : 4 ,
-        projectImage : img1 ,
+        projectImage : img4 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
         liveLink : "tuhindev.vercel.app" ,
         sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
-        category : "all"
+        category : "frontend"
     },
     {
         id : 5 ,
-        projectImage : img1 ,
+        projectImage : img3 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
         liveLink : "tuhindev.vercel.app" ,
         sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
-        category : "all"
+        category : "frontend"
     },
     {
         id : 6 ,
-        projectImage : img1 ,
+        projectImage : img2 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
         liveLink : "tuhindev.vercel.app" ,
         sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
-        category : "all"
+        category : "backend"
     },
 ]

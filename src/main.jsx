@@ -16,6 +16,7 @@ import Pages from "./Pages/Pages.jsx"
 import Contact from "./Pages/Contact.jsx"
 import RootLayout from './Layout/RootLayout.jsx';
 import Services from './Pages/Services.jsx';
+import Faq from './Pages/Faq.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="/pages" element={ <Pages/> } />
       <Route path="/services" element={ <Services/> } />
       <Route path="/contact" element={ <Contact/> } />
+      <Route path="/faq" element={ <Faq/> } />
 
     </Route>
   )
