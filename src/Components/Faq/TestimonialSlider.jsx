@@ -25,7 +25,7 @@ const TestimonialSlider = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 1000000,
+                delay: 5000,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -45,9 +45,9 @@ const TestimonialSlider = () => {
                             <CardBox className={`mt-5 !p-6 lg:!p-10`}>
                                 <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10">
                                     <div className='w-[100px] lg:w-full rounded-full mx-auto lg:ml-auto lg:rounded-lg  overflow-hidden lg:col-span-1'>
-                                        <img src={testimonialImg} alt="" className=' h-[100%] rounded-lg scale-[1.5] ' />
+                                        <img src={testimonialImg} alt="img" className=' h-[100%] rounded-lg  ' />
                                     </div>
-                                    <div className="desc lg:col-span-3">
+                                    <div className="desc lg:col-span-3 text-left">
                                         <FaQuoteLeft className='text-theme text-[40px] lg:text-[80px] leading-none' />
                                         <MinTitle text={testimonialDesc} className="!text-textSecondary py-2" />
                                         <MidTitle text={personName} className="text-theme" />

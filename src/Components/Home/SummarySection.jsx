@@ -16,17 +16,17 @@ const SummarySection = () => {
   const handleDownload = () => {
     setTimeout(() => {
       toast.success("Tuhin's Resume is Successfully Download !", {
-        position: "bottom-center",
+        position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "#9948FF",
+        theme: "dark",
         transition: Bounce,
         });
-    }, 1000);
+    },);
 
 
     
@@ -43,7 +43,7 @@ const SummarySection = () => {
         </div>
       </a>
       <ToastContainer className="bg-theme"
-position="bottom-center"
+position="top-center"
 autoClose={2000}
 hideProgressBar
 newestOnTop={false}
@@ -52,7 +52,7 @@ rtl={false}
 pauseOnFocusLoss
 draggable
 pauseOnHover
-theme="#9948FF"
+theme="dark"
 transition : Bounce
 />
     </div>
