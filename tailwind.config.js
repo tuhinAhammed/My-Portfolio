@@ -11,7 +11,7 @@ export default {
         container : "85%"
       },
       colors : {
-        theme : "#FF8A1C" ,
+        theme : "#8128F6" , //#8128F6
         primary : "#FFFFFF", 
         secondary : "#0D0A0D" ,
         tertiary : "#3F4143", //border
@@ -38,6 +38,10 @@ export default {
       letterSpacing : {
         sm : "0.8px" ,
         lg : "1px"
+      },
+      animation: {
+        'spin-slow': 'spin 20s linear infinite',
+        'pulse-slow' : 'pulse 10s linear infinite'
       }
     },
   },

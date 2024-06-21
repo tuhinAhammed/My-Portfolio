@@ -1,9 +1,7 @@
 import React from 'react'
 import MidTitle from '../../Layout/MidTitle'
 import MinTitle from '../../Layout/MinTitle'
-import { GoMoveToEnd } from 'react-icons/go'
-import Button from '../../Layout/Button'
-import { MdDownloadForOffline } from 'react-icons/md'
+
 import { FaDownload } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 
@@ -12,10 +10,12 @@ import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from 'react-toastify
 import 'react-toastify/dist/ReactToastify.css';
 
 import resume from "../../assets/Resume/tuhinResume.pdf"
+
+import { IoMdDownload } from 'react-icons/io'
 const SummarySection = () => {
   const handleDownload = () => {
     setTimeout(() => {
-      toast.success("Tuhin's Resume is Successfully Download !", {
+      toast.success("Download successfully done!", {
         position: "top-center",
         autoClose: 2000,
         hideProgressBar: false,
@@ -25,11 +25,11 @@ const SummarySection = () => {
         progress: undefined,
         theme: "dark",
         transition: Bounce,
-        });
+      });
     },);
 
 
-    
+
   }
   return (
     <div className='color-primary '>
@@ -42,19 +42,19 @@ const SummarySection = () => {
           <FaDownload className='text-2xl animate-bounce text-primary group-hover:text-theme' />
         </div>
       </a>
-      <ToastContainer className="bg-theme"
-position="top-center"
-autoClose={2000}
-hideProgressBar
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="dark"
-transition : Bounce
-/>
+      <ToastContainer className=""
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition:Bounce
+      />
     </div>
   )
 }

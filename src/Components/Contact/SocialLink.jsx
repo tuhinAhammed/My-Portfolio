@@ -51,9 +51,9 @@ const SocialLink = (className) => {
                             <Flex className="items-center gap-2 group border-[1px] sm:border-[1px] lg:border-2 border-theme rounded-full  pr-5">
                                 <div  className='relative group transition-transform '>
                                     <div className='w-[121%] lg:top-[-7px] lg:left-[-7px] sm:top-[-4px] sm:left-[-4px] top-[-4px] left-[-4px] absolute   '>
-                                        <img src={SocialHover} alt="" className='rounded-full opacity-0 group-hover:opacity-100 group-hover:rotate-[50deg] duration-500 ' />
+                                        <img src={SocialHover} alt="" className='rounded-full animate-spin-slow duration-500 ' />
                                     </div>
-                                    <div className='text-primary text-xl sm:text-2xl md:text-2xl lg:text-3xl  border-[1px] sm:border-[1px] lg:border-2 border-tertiary rounded-full group-hover:text-theme p-2 md:p-4 lg:p-4'>
+                                    <div className='text-primary text-xl sm:text-2xl md:text-2xl lg:text-3xl  rounded-full group-hover:text-theme p-2 md:p-4 lg:p-4'>
                                         {item.socialPlatformIcon}
                                     </div>
                                 </div>

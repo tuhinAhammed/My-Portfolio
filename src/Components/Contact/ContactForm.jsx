@@ -64,7 +64,7 @@ const handleChange = (input) => {
         <textarea onChange={handleChange}  name="message" placeholder="Your Message Here" type="checkbox" rows="4" className="className={` p-3 bg-transparent border-2 border-tertiary rounded-md text-textSecondary focus-visible:outline-none focus-visible:border-theme w-full "></textarea>
       </div>
       <div onClick={handleSubmit} className='inline-block'>
-        <PrimaryButton text="Submit" className="mt-3" />
+        <PrimaryButton text="Submit" className="mt-3 inline-block" />
       </div>
       <ToastContainer className=""
         position="top-center"

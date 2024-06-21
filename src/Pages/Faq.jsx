@@ -4,9 +4,7 @@ import CardBox from '../Layout/CardBox'
 import { FaqData } from "../Components/Faq/FaqData"
 import MinTitle from '../Layout/MinTitle';
 import MidTitle from '../Layout/MidTitle';
-import LargeTitle from '../Layout/LargeTitle';
 import Button from '../Layout/Button';
-import img from "../assets/profile.jpeg"
 import { FaMinus, FaPlus } from 'react-icons/fa6';
 
 import agency from "../assets/object.jpeg"

@@ -4,6 +4,7 @@ import MinTitle from '../../Layout/MinTitle'
 import { GoMoveToEnd } from 'react-icons/go'
 import LatestProject from "../../assets/latestProject.png"
 import { Link } from 'react-router-dom'
+import BoxAction from './BoxAction'
 const LatestWorks = () => {
   return (
     <div className='color-primary '>
@@ -12,10 +13,7 @@ const LatestWorks = () => {
     <Link to = "/project" >
         <img src={LatestProject} alt=""  className='py-2 rounded-[25px]'/>
     </Link>
-    <div className="latestWork cursor-pointer flex justify-between items-center  group transition  delay-1000">
-        <MinTitle text="All Project" className="group-hover:text-theme  " />
-        <GoMoveToEnd className='text-primary text-2xl group-hover:text-theme ' />
-    </div>
+    <BoxAction title ="All Project" link="/project"/>
 </div>
   )
 }

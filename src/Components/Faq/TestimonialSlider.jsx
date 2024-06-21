@@ -7,7 +7,6 @@ import "./styles.css"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import { testimonialData } from './TestimonialData';
-import img from "../../assets/profile.jpeg"
 import CardBox from '../../Layout/CardBox';
 import { FaQuoteLeft } from 'react-icons/fa6';
 import MinTitle from '../../Layout/MinTitle';

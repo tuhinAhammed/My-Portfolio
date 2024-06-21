@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const PrimaryButton = ({text , className , link }) => {
   
   return (
-    <div className={`${className} inline-block`}>
+    <div className={`${className} `}>
 <Link to={link} className='group duration-2000'>
   <Flex className="gap-x-2">
   <button className="text-primary px-4 py-1 md:px-6 md:py-3 lg:px-6 lg:py-3 rounded-full border-2 border-theme bg-theme hover:bg-transparent hover:text-theme ">{text}</button>

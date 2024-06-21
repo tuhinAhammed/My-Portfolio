@@ -1,12 +1,27 @@
 import React from 'react'
 import Exprience from '../../Layout/Exprience'
-
+const data = [
+  {
+    title: "years of exprience",
+    value: "+3"
+  },
+  {
+    title: "Total Project",
+    value: "+53"
+  },
+  {
+    title: "CLENTS WORLDWIBE",
+    value: "25"
+  },
+]
 const ExprienceSection = () => {
   return (
     <div>
-        <Exprience number = "4" text="years of exprience"/>
-        <Exprience number = "+52" text="Total Project" className="mt-8"/>
-        <Exprience number = "4" text="years of exprience" className="mt-8"/>
+      {
+        data.map((item) => (
+          <Exprience number={item.value} text={item.title} />
+        ))
+      }
     </div>
   )
 }

@@ -17,7 +17,7 @@ const handleChange = (input) => {
       <MinTitle text={title} className="!text-base lg:!text-lg" />
       
       {/* <p className='error text-red-500'>Enter Your Error</p> */}
-      <input type={type} placeholder={placeholder} onChange={handleChange} onKeyDown={handleKeyDown} name={name} className={`my-2 p-3 bg-transparent border-2 border-tertiary rounded-md text-textSecondary focus-visible:outline-none focus-visible:border-theme w-full text-sm lg:text-lg ${className}`} />
+      <input type={type} placeholder={placeholder} onChange={handleChange} onKeyDown={handleKeyDown} name={name} className={`my-2 p-3 bg-transparent border-[1px] lg:border-2 border-tertiary rounded-md text-textSecondary focus-visible:outline-none focus-visible:border-theme w-full text-sm lg:text-lg ${className}`} />
     </div>
   );
 };

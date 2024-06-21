@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div>
+        <div className='mt-6'>
             <Container>
-                <Flex className="innerFooterm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-between itrms-center py-4">
+                <Flex className="innerFooterm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-between itrms-center py-6">
                         <MinTitle text="Copyright - 2024 Bontox -All Rights Reserved" className="text-center lg:col-span-1 sm:col-span-2 lg:text-left" />
                     <div className="menu lg:col-span-1 sm:col-span-2 ">
                         <nav className='w-[100%]  text-primary  text-base  text-right   font-semibold tracking-sm'>

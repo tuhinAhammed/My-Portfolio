@@ -1,58 +1,55 @@
 import React from 'react'
 import MidTitle from '../../Layout/MidTitle'
-import SlidingSection from '../../Layout/SlidingSection'
-import HtmlIcon from "../../assets/Logo.png"
-
-import MinTitle from '../../Layout/MinTitle'
-import { GoMoveToEnd } from 'react-icons/go'
 import Flex from '../../Layout/Flex'
 import LargeTitle from '../../Layout/LargeTitle'
 import SkiledItem from '../../Layout/SkiledItem'
-import Frontend from "../../assets/frontend.gif"
-import Backend from "../../assets/backend.gif"
-import Api from "../../assets/api.gif"
-import App from "../../assets/app.gif"
-import { BiSolidLike } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
+import Frontend from "../../assets/frontend.png"
+import Backend from "../../assets/backend.png"
+import Api from "../../assets/api.png"
+import App from "../../assets/app.png"
 
-const ServicesOffering = ({ className }) => {
+import BoxAction from './BoxAction'
+import { BiSolidLike } from 'react-icons/bi'
+import MinTitle from '../../Layout/MinTitle'
+const serviceData = [
+    {
+        title: "Frontend",
+        image: Frontend
+    },
+    {
+        title: "Backend",
+        image: Backend
+    },
+    {
+        title: "Api Dev",
+        image: Api
+    },
+    {
+        title: "Mobile App",
+        image: App
+    },
+]
+const ServicesOffering = () => {
     return (
-        <div className={`${className}`}>
+        <div className="service">
             <MidTitle text="Services Offering" className=" duration-300" />
 
-                <Flex className="pt-8  gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center">
-                    <SkiledItem text="Frontend" className="">
-                    <div className=''>
-                    <img src={Frontend} alt="" className='w-[100px] h-[60px] rounded-lg'/>
-                    </div>
-                    </SkiledItem>
-                    <SkiledItem text="Backend">
-                    <div className=''>
-                    <img src={Backend} alt="" className='w-[100px] h-[60px] rounded-lg'/>
-                    </div>
-                    </SkiledItem>
-                    <SkiledItem text="Mobile App">
-                    <div className=''>
-                    <img src={App} alt="" className='w-[100px] h-[60px] rounded-lg'/>
-                    </div>
-                    </SkiledItem>
-                    <SkiledItem text="Api Dev">
-                    <div className=''>
-                    <img src={Api} alt="" className='w-[100px] h-[60px] rounded-lg'/>
-                    </div>
-                    </SkiledItem>
-                </Flex>
+            <Flex className="pt-8  gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 items-center">
+                {
+                    serviceData.map((item) => (
+                        <div className='m-auto'>
+                            <img src={item.image} alt="" className='w-[70px]  rounded-lg ' />
+                            <MinTitle text={item.title} className="text-center mt-2" />
+                        </div>
+                    ))
+                }
+            </Flex>
 
-            <Flex className="goodAt items-center gap-4 py-6">
+            <Flex className="goodAt items-center gap-4 py-4">
                 <MidTitle text="Things I'am good at" className="!text-[30px]" />
                 <BiSolidLike className='text-5xl text-theme group-hover:ml-6 duration-300' />
             </Flex>
-            <Link to ="/services">
-            <Flex className=" action cursor-pointer justify-between items-center">
-                <MinTitle text="All Services" className="group-hover:text-theme" />
-                <GoMoveToEnd className='text-primary text-2xl group-hover:text-theme' />
-            </Flex>
-            </Link>
+            <BoxAction title="All Services" link="/services" />
         </div>
     )
 }

@@ -1,22 +1,22 @@
 export const FaqData = [
-    {
-      "question": "What is your return policy?",
-      "answer": "Our return policy allows you to return items within 30 days of purchase. Items must be in their original condition and packaging. Please contact our customer service for a return authorization."
-    },
-    {
-      "question": "How do I track my order?",
-      "answer": "You can track your order using the tracking number provided in your shipping confirmation email. Simply visit our website and enter the tracking number in the 'Track Order' section."
-    },
-    {
-      "question": "Do you offer international shipping?",
-      "answer": "Yes, we offer international shipping to many countries. Shipping costs and delivery times will vary based on the destination. Please refer to our shipping policy page for more details."
-    },
-    {
-      "question": "Can I change or cancel my order?",
-      "answer": "You can change or cancel your order within 24 hours of placing it. Please contact our customer service team as soon as possible to request changes or cancellation."
-    },
-    {
-      "question": "What payment methods do you accept?",
-      "answer": "We accept various payment methods including credit/debit cards, PayPal, and bank transfers. All transactions are securely processed."
-    },
+  {
+    "question": "What is web development?",
+    "answer": "Web development refers to the work involved in creating and maintaining websites for the internet or an intranet. It includes aspects such as web design, web content development, client-side/server-side scripting, and network security configuration."
+},
+{
+    "question": "What is frontend development?",
+    "answer": "Frontend development involves creating the visual and interactive parts of a website or web application that users interact with directly. Technologies commonly used include HTML, CSS, and JavaScript."
+},
+{
+    "question": "What is backend development?",
+    "answer": "Backend development focuses on the server-side of web applications. It involves managing the database, server, and application logic. Common languages and frameworks include Node.js, Python, Ruby on Rails, and PHP."
+},
+{
+    "question": "What is the MERN stack?",
+    "answer": "The MERN stack is a JavaScript stack used for building web applications. It consists of MongoDB, Express.js, React.js, and Node.js. MERN allows developers to use a single language, JavaScript, across the entire development stack."
+},
+{
+    "question": "What are the benefits of using the MERN stack?",
+    "answer": "The MERN stack offers several benefits, including the use of a single programming language (JavaScript) for both client-side and server-side development, a strong community support, flexibility, and efficient development processes due to its component-based architecture."
+},
 ]
