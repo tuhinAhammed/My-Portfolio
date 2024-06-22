@@ -1,5 +1,13 @@
-import img1 from "../../assets/profile.png"
+import dynamicCard from "../../assets/project/dynamic-card-from-api.png"
+import animationSlider from "../../assets/project/animationSlider.png"
+import caroselSlider from "../../assets/project/caroselSlider.png"
+import finsweet from "../../assets/project/agenc.png"
+import agenc from "../../assets/project/finsweet.png"
+import innovate from "../../assets/project/innovate.png"
+import foodie from "../../assets/project/foodie.png"
+import rantila from "../../assets/project/rantila.png"
 import img2 from "../../assets/frontend.png"
+import img3 from "../../assets/backend.png"
 import img3 from "../../assets/backend.png"
 import img4 from "../../assets/node.png"
 
@@ -37,25 +45,67 @@ export const projectButton = [
 ]
 export const projectData =[
     {
-        id : 1 ,
-        projectImage : img1 ,
-        projectName : "Orebi Ecommerce",
-        projectDesc : "This Is a Multi Vendor's E-Commerce bwehc wejjk ejkd  jjkdnw qjk jkdbkj n iqndjkw j 32jd  jd 1j mq jdqjd qwjkndqwnjdqw dqjdjqw djkq d qws ",
-        liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        sourceLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        category : "all"
+
+        projectImage : finsweet ,
+        projectName : "Finsweet",
+        projectDesc : "This Is a Agency Project by HTML , CSS and  Basix js",
+        liveLink : "https://finsweet-by-object.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/finsweet" ,
+        category : "frontend"
     },
     {
-        id : 2 ,
-        projectImage : img2 ,
-        projectName : "Orebi Ecommerce",
-        projectDesc : "This Is a Multi Vendor's E-Commerce",
-        liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        sourceLink : "https://vercel.com/tuhin-ahammeds-projects" ,
-        category : "ui"
+        projectImage : agenc ,
+        projectName : "Agenc",
+        projectDesc : "This Is a Agency Project by HTML , CSS and BEM Method",
+        liveLink : "https://agenc-bem.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/Agenc-BEM" ,
+        category : "frontend"
     },
     {
-        id : 3 ,
+        projectImage : rantila ,
+        projectName : "Rantila",
+        projectDesc : "This Is a Car Rental Project by HTML , CSS and jS",
+        liveLink : "https://rantila-project.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/rantila_project" ,
+        category : "frontend"
+    },
+    {
+        projectImage : innovate ,
+        projectName : "Innovate",
+        projectDesc : "This Is a Agency Project by HTML , CSS and jS",
+        liveLink : "https://innovate-by-object.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/innovate" ,
+        category : "frontend"
+    },
+    {
+        projectImage : foodie ,
+        projectName : "Foodie",
+        projectDesc : "This Is a Restaurant Project by HTML , CSS and jS",
+        liveLink : "https://resturent-foodie.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/resturent" ,
+        category : "frontend"
+    },
+    {
+
+        projectImage : dynamicCard ,
+        projectName : "Dynamic-Card-from-API",
+        projectDesc : "This Is a Dynamic-Card-from-API , This card loaded from Api",
+        liveLink : "https://animation-bg-project.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/Dynamic-Card-from-API" ,
+        category : "vanillajs"
+    },
+
+    {
+
+        projectImage : animationSlider ,
+        projectName : "Animated Slider",
+        projectDesc : "This Is a Animated Slider which make by Vanilla JS",
+        liveLink : "https://vercel.com/tuhin-ahammeds-projects" ,
+        sourceLink : "https://github.com/tuhinAhammed/Animation-Bg-Project" ,
+        category : "vanillajs"
+    },
+    {
+
         projectImage : img3 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
@@ -64,16 +114,16 @@ export const projectData =[
         category : "ui"
     },
     {
-        id : 4 ,
-        projectImage : img4 ,
-        projectName : "Orebi Ecommerce",
-        projectDesc : "This Is a Multi Vendor's E-Commerce",
-        liveLink : "tuhindev.vercel.app" ,
-        sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
-        category : "frontend"
+
+        projectImage : caroselSlider ,
+        projectName : "carousel slider",
+        projectDesc : "This Is a carousel slider which make by Vanilla JS",
+        liveLink : "https://slider-by-basic-javascript.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/slider-by-basic-Javascript" ,
+        category : "vanillajs"
     },
     {
-        id : 5 ,
+
         projectImage : img3 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
@@ -81,17 +131,9 @@ export const projectData =[
         sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
         category : "frontend"
     },
+
     {
-        id : 6 ,
-        projectImage : img2 ,
-        projectName : "Orebi Ecommerce",
-        projectDesc : "This Is a Multi Vendor's E-Commerce",
-        liveLink : "tuhindev.vercel.app" ,
-        sourceLink : "github.com/tuhinAhammed/orebiEcommerce" ,
-        category : "backend"
-    },
-    {
-        id : 6 ,
+
         projectImage : img2 ,
         projectName : "Orebi Ecommerce",
         projectDesc : "This Is a Multi Vendor's E-Commerce",
