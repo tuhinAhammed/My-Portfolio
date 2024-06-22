@@ -12,8 +12,8 @@ import Flex from '../Layout/Flex'
 import WorksWith from '../Components/Home/WorksWith'
 import LatestWorks from '../Components/Home/LatestWorks'
 import SeeMyLatestWork from '../Components/Home/SeeMyLatestWork'
-import shapeSingleStar from "../assets/shapeSingleStar.png"
-import shapeCircle from "../assets/shapeCircle.png"
+import shapeSingleStar from "../assets/shapeSingleStar.webp"
+import shapeCircle from "../assets/shapeCircle.webp"
 
 
 const Home = () => {

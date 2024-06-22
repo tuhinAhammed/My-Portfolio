@@ -1,12 +1,8 @@
 import React from 'react'
 import Container from '../Layout/Container'
 import CardBox from '../Layout/CardBox'
-import LargeTitle from '../Layout/LargeTitle'
 import ErrorImg from "../assets/error.gif"
-import Flex from '../Layout/Flex'
-import Button from '../Layout/Button'
 import PrimaryButton from '../Layout/PrimaryButton'
-import MidTitle from '../Layout/MidTitle'
 import MidLargeTitle from '../Layout/MidLargeTitle'
 const Error = () => {
     const pageName = window.location.pathname.split("/")[1]

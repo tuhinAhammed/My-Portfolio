@@ -1,4 +1,4 @@
-import img from "../../assets/testimonialMan.jpg"
+import img from "../../assets/testimonialMan.webp"
 import FemaleImg from "../../assets/testimonialFemale.jpg"
 // import FemaleImg from "../../assets/latestProject.png"
 // import img3 from "../../assets/mongodb.png"

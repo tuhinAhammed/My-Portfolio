@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import { WiStars } from 'react-icons/wi'
-import shapeCircle from "../assets/shapeCircle.png"
-import shapeSingleStar from "../assets/shapeSingleStar.png"
-import shapeDoubleStar from "../assets/shapeDoubleStar.png"
+
 const CardBox = ({className , children , shapeImg}) => {
   // const [shapeOpen , setShapeOpen] = useState({shape})
   // box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25)

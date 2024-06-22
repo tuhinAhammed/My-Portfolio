@@ -17,12 +17,57 @@ import JavascriptIcon from "../../assets/javascript.png"
 import ReactIcon from "../../assets/react.png"
 import ReduxIcon from "../../assets/redux.png"
 import MongoDbIcon from "../../assets/mongodb.png"
-import NodeJsIcon from "../../assets/native.png"
+import NodeJsIcon from "../../assets/node.png"
+import NativeIcon from "../../assets/native.png"
 import ExpressIcon from "../../assets/express.png"
 import GithubIcon from "../../assets/github.png"
 import FigmaIcon from "../../assets/figma.png"
-import CnavaIcon from "../../assets/canva.png"
-
+import CanvaIcon from "../../assets/canva.png"
+const iconData = [
+    {
+      icon: HtmlIcon,
+    },
+    {
+      icon: CssIcon,
+    },
+    {
+      icon: BootstrapIcon,
+    },
+    {
+      icon: TailwindIcon,
+    },
+    {
+      icon: JavascriptIcon,
+    },
+    {
+      icon: ReactIcon,
+    },
+    {
+      icon: ReduxIcon,
+    },
+    {
+      icon: MongoDbIcon,
+    },
+    {
+      icon: NodeJsIcon,
+    },
+    {
+      icon: NativeIcon,
+    },
+    {
+      icon: ExpressIcon,
+    },
+    {
+      icon: GithubIcon,
+    },
+    {
+      icon: FigmaIcon,
+    },
+    {
+      icon: CanvaIcon,
+    },
+  ];
+  
 const skilledData = [
     {
         skilName: "HTML-5",
@@ -95,43 +140,12 @@ const SkilAndTools = ({ className }) => {
             <SlidingSection className="icon " direction="right" >
                 <Flex className=" gap-4 mt-4 items-center">
 
+                    {
+                        iconData.map((item) => (
+                            <img src={item.icon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                        ))
 
-                    <img src={CnavaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={FigmaIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={GithubIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={ExpressIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={NodeJsIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={MongoDbIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
-
-                    <img src={ReduxIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-                    <img src={ReactIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-                    <img src={JavascriptIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-
-                    <img src={TailwindIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-                    <img src={BootstrapIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-
-                    <img src={CssIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
-
-
-
-                    <img src={HtmlIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
-
-
-                    {/* <img src={HtmlIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' /> */}
+                    }
                 </Flex>
             </SlidingSection>
 
