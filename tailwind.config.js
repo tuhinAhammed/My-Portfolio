@@ -39,9 +39,16 @@ export default {
         sm : "0.8px" ,
         lg : "1px"
       },
+      keyframes: {
+        leftToRight: {
+          '0%, 100%': { transform: 'rotate(10deg)' ,},
+          '50%': { transform: 'rotate(-10deg)' ,  },
+        },
+      },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
-        'pulse-slow' : 'pulse 10s linear infinite'
+        'pulse-slow' : 'pulse 10s linear infinite',
+        leftToRight : 'leftToRight 3s infinite'
       }
     },
   },

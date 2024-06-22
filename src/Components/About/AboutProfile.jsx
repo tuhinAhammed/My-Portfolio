@@ -1,12 +1,14 @@
 import React from 'react'
 import ProfileImg from "../../assets/profile.png"
 import Resize from "../../assets/img-resize.png"
+import Profile from '../Home/Profile'
 
 const AboutProfile = () => {
   return (
-    <div className="profileImage w-[90%] m-auto relative  bg-[#eee] rounded-full overflow-hidden">
-    {/* <img src={Resize} alt="" className='absolute m-auto w-[90%] top-[-6px] left-[5%]' /> */}
-    <img src={ProfileImg} alt="" className=' m-auto w-full  overflow-hidden' />
+    <div className="profileImageWrapper relative w-[200px] h-[200px] flex justify-center items-center  m-auto">
+    <div className="profileImage bg-theme w-[200px] h-[200px] rounded-full m-auto overflow-hidden ">
+      <img src={ProfileImg} alt="Profile" className="w-full h-full object-cover" />
+    </div>
   </div>
   )
 }

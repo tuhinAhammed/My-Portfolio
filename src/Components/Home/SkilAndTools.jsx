@@ -131,7 +131,7 @@ const SkilAndTools = ({ className }) => {
                     <img src={HtmlIcon} alt="" className='p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center ' />
 
 
-                    <img src={HtmlIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' />
+                    {/* <img src={HtmlIcon} alt="" className=' p-2 border-2 border-tertiary rounded-xl w-[50px] h-[50px] text-center' /> */}
                 </Flex>
             </SlidingSection>
 

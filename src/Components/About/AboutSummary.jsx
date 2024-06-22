@@ -4,7 +4,7 @@ import MinTitle from '../../Layout/MinTitle'
 
 const AboutSummary = ({ className }) => {
     return (
-        <div className={`${className}`}>
+        <div className={`${className} ` }>
             <MidTitle text="Hello," />
             <MidTitle text="I am Tuhin Ahammed Shuvo," />
             <MinTitle className="!text-textSecondary pt-1" text="Accomplished Full Stack Web Developer with a strong foundation in both frontend and backend development. With 4

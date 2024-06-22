@@ -56,7 +56,7 @@ const Header = () => {
               open ? <RxCross2 /> : <HiOutlineMenuAlt1 />
             }
           </div>
-          <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent  bg-quaternary pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100  border-2 border-tertiary` : `right-[-100%] opacity-0  md:opacity-100 `}  `}>
+          <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent  bg-quaternary pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100  border-[1px] border-tertiary` : `right-[-100%] opacity-0  md:opacity-100 `}  `}>
             {
               Links.map((link, index) => (
                 <li className='md:py-0 py-2' key={index}>

@@ -45,9 +45,9 @@ const ServicesOffering = () => {
                 }
             </Flex>
 
-            <Flex className="goodAt items-center gap-4 py-4">
+            <Flex className="goodAt items-center gap-4 py-4 group">
                 <MidTitle text="Things I'am good at" className="!text-[30px]" />
-                <BiSolidLike className='text-5xl text-theme group-hover:ml-6 duration-300' />
+                <BiSolidLike className='text-5xl text-theme group-hover:ml-6 duration-300 animate-leftToRight' />
             </Flex>
             <BoxAction title="All Services" link="/services" />
         </div>

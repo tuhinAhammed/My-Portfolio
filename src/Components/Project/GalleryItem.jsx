@@ -4,7 +4,7 @@ import Button from '../../Layout/Button'
 
 const GalleryItem = ({id , projectName , projectDesc , liveLink , sourceLink , projectImage}) => {
   return (
-    <div key={id} className='w-full lg:w-[350px] overflow-hidden relative rounded-lg  group '  >
+    <div key={id} className='w-full lg:w-[350px] overflow-hidden relative rounded-lg  group m-auto'  >
     <div className='after w-full h-full bg-[#00000080] text-primary absolute top-[100%] group-hover:top-0 left-0 opacity-100 group-hover:opacity-100 transition-all duration-300 ease-in-out p-4 rounded-lg '>
     <MinTitle text={projectName} className="projectName text-center  pb-2" />
       <MinTitle text={projectDesc} className="hidden lg:contents description !py-20 " />

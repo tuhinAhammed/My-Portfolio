@@ -18,11 +18,11 @@ const About = () => {
     <div className=''>
       <Container>
         <div>
-          <Flex className="grid grid-cold-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-6 items-start gap-5">
-            <CardBox className="col-span-1 lg:col-span-4">
+          <Flex className="grid grid-cold-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-6 items-start gap-5 ">
+            <CardBox className="col-span-1 lg:col-span-4 !w-full !h-[300px]">
               <AboutSummary/>
             </CardBox>
-            <CardBox className="col-span-1 lg:col-span-2">
+            <CardBox className="col-span-1 lg:col-span-2 !w-full !h-[300px] flex">
               <AboutProfile/>
             </CardBox>
           </Flex>

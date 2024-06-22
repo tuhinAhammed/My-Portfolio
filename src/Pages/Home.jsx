@@ -42,7 +42,7 @@ const Home = () => {
                 <SocialProfile />
               </CardBox>
             </div>
-            <CardBox className=" mt-5 group transition  delay-1000" shapeImg ={shapeCircle}>
+            <CardBox className=" mt-5  transition  delay-1000" shapeImg ={shapeCircle}>
               <ServicesOffering /> 
             </CardBox>
           </div>
