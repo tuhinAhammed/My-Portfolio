@@ -14,7 +14,7 @@ export default {
         theme : "#8128F6" , //#8128F6
         primary : "#FFFFFF", 
         secondary : "#0D0A0D" ,
-        tertiary : "#3F4143", //border
+        tertiary : "#3F4143", //border - #222426 , #3F4143
         quaternary : "#222426" , // header
         background : "#24130E" , // index.jss background 
         senary : "#141316" , // profile box
@@ -49,10 +49,17 @@ export default {
         'spin-slow': 'spin 20s linear infinite',
         'pulse-slow' : 'pulse 10s linear infinite',
         leftToRight : 'leftToRight 3s infinite'
-      }
+      },
+      boxShadow: {
+        'header-shadow': 'rgb(255 255 255 / 10%) 3px 3px 6px 0px inset, rgb(255 255 255 / 10%) -3px -3px 6px 1px inset',
+        'primary-shadow': 'rgb(255 255 255 / 4%) 3px 3px 6px 0px inset, rgb(255 255 255 / 4%) -3px -3px 6px 1px inset',
+        'secondary-shadow': 'rgb(255 255 255 / 7%) 3px 3px 6px 0px inset, rgb(255 255 255 / 7%) -3px -3px 6px 1px inset',
+      },
     },
   },
   plugins: [],
 }
 
 
+// opacity: 1;
+// transform: translateZ(0) scale(1);

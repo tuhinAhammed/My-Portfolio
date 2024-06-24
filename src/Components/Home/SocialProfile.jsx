@@ -17,7 +17,7 @@ const SocialProfile = ({ className, actionClassName }) => {
             <img src={SocialHover} alt="" className='rounded-full  group-hover:rotate-[50deg] duration-500 animate-spin-slow group-hover:animate-none ' />
           </div>
           <div className=''>
-          <CiLinkedin className='text-primary text-7xl lg:text-8xl p-4 lg:p-6  group-hover:text-theme' />
+          <CiLinkedin className='text-primary text-7xl lg:text-8xl p-4 lg:p-6  group-hover:text-theme group-hover:animate-pulse' />
           </div>
         </a>
         <a href="mailto:tuhinahamed2030@gemail.com" target="_blank" className='relative group transition-transform '>
@@ -25,11 +25,11 @@ const SocialProfile = ({ className, actionClassName }) => {
             <img src={SocialHover} alt="" className='rounded-full  group-hover:rotate-[50deg] duration-500 animate-spin-slow group-hover:animate-none' />
           </div>
           <div className=''>
-          <CgMail className='text-primary text-7xl lg:text-8xl p-4 lg:p-6  group-hover:text-theme' />
+          <CgMail className='text-primary text-7xl lg:text-8xl p-4 lg:p-6  group-hover:text-theme group-hover:animate-pulse' />
           </div>
         </a>
       </Flex>
-      <BoxAction title="Social Profile" link="/contact"/>
+      <BoxAction title="Social Profile" link="/contact" className={`${actionClassName}`} />
 
     </div>
   )

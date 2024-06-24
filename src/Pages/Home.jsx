@@ -14,6 +14,7 @@ import LatestWorks from '../Components/Home/LatestWorks'
 import SeeMyLatestWork from '../Components/Home/SeeMyLatestWork'
 import shapeSingleStar from "../assets/shapeSingleStar.webp"
 import shapeCircle from "../assets/shapeCircle.webp"
+import ringShape from "../assets/ringShape.webp"
 
 
 const Home = () => {
@@ -27,14 +28,14 @@ const Home = () => {
             <CardBox className="">
               <ProfileSection />
             </CardBox>
-            <CardBox className="articles mt-5" shapeImg ={shapeCircle}>
+            <CardBox className="articles mt-5" shapeImg ={shapeCircle} shapeCss="w-[25%] top-[-0%] right-[-0%]">
               <ArticleSection />
             </CardBox>
           </div>
           <div className="middle lg:col-span-2 md:col-span-1">
             <div className="innerSummmarySocial flex grid lg:grid-cols-2 grid-cols-1 gap-5">
 
-              <CardBox className=""  shapeImg ={shapeSingleStar}>
+              <CardBox className=""  shapeImg ={shapeSingleStar} shapeCss="w-[25%] top-[-0%] right-[-0%]">
                 <SummarySection />
               </CardBox>
 
@@ -42,7 +43,7 @@ const Home = () => {
                 <SocialProfile />
               </CardBox>
             </div>
-            <CardBox className=" mt-5  transition  delay-1000" shapeImg ={shapeCircle}>
+            <CardBox className=" mt-5  transition  delay-1000" shapeImg ={shapeCircle} shapeCss="w-[25%] top-[-0%] right-[-0%]">
               <ServicesOffering /> 
             </CardBox>
           </div>
@@ -50,14 +51,14 @@ const Home = () => {
             <CardBox className="">
               <SeeMyLatestWork/>
             </CardBox>
-            <CardBox className="articles mt-5 !py-[33px] !cursor-default" shapeImg ={shapeSingleStar}>
+            <CardBox className="articles mt-5 !py-[33px] !cursor-default" shapeImg ={ringShape} shapeCss="w-[35%] top-[-0%] right-[-0%] !opacity-[0.3]" >
               <ExprienceSection />
             </CardBox>
           </div>
         </div>
         <div className="secondPart mt-5">
           <Flex className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            <CardBox className="lg:col-span-2" >
+            <CardBox className="lg:col-span-2"  >
               <SkilAndTools />
             </CardBox>
             <CardBox className="lg:col-span-1" shapeImg ={shapeCircle}>

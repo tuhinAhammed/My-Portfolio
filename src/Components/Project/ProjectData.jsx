@@ -50,7 +50,7 @@ export const projectData =[
 
         projectImage : finsweet ,
         projectName : "Finsweet",
-        projectDesc : "This Is a Agency Project by HTML , CSS and  Basix js",
+        projectDesc : "This Is a Agency Project by HTML , CSS and  Basis js",
         liveLink : "https://finsweet-by-object.vercel.app/" ,
         sourceLink : "https://github.com/tuhinAhammed/finsweet" ,
         category : "frontend"

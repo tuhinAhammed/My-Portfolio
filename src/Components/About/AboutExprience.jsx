@@ -13,7 +13,6 @@ const AboutExprience = () => {
                 <Exprience number="4" text="Recognitions" className="!text-4xl lg:col-span-1" />
                 <Exprience number="+52" text="Unhappy Clints" className="!text-4xl lg:col-span-1"/>
             </Flex>
-                
         </div>
     )
 }

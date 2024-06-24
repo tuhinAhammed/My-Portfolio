@@ -14,55 +14,61 @@ import TestimonialSlider from '../Components/Faq/TestimonialSlider';
 const Faq = () => {
     const [active, setActive] = useState(null)
     const handleClick = (index) => {
-        if(active === index){
+        if (active === index) {
             setActive(null)
         }
-        else{
+        else {
             setActive(index)
         }
     }
     return (
         <div>
             <Container>
-                <div className='grid grid-cols-1 lg:grid-cols-5 gap-x-20 items-center'>
-                    <div className='lg:col-span-3 '>
-                    {
-                        FaqData.map((item, i) => {
-                            const { question, answer } = item
-                            return (
-                                <div>
-                                    <CardBox className={`mb-2 `}>
-                                        <div key={i} className={`flex justify-between items-center cursor-pointer duration-1000 ease-in-out `} onClick={() => handleClick(i)}>
-                                            <MinTitle text={question} className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`} />
-                                            <div className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`}>
-                                            {
-                                                active === i ? <FaMinus/> : <FaPlus />
-                                            }
-                                            </div>
-                                        </div>
-                                        {
-                                            active === i &&
-                                            <MinTitle text={answer} className="pt-2 !text-textSecondary" />
-                                        }
-                                    </CardBox>
-                                </div>
-                            )
-                        })
-                    }
+                <CardBox>
 
-                    </div>
-                    <div className='lg:col-span-2 '>
-                        <img src={agency} alt="" className='rounded-full mt-4 lg:mt-0 w-[50%] lg:w-[65%] m-auto'/>
-                        <div className='flex justify-between items-center lg:mt-6 '>
-                        <MidTitle text="Know About ObJect ??"/>
-                        <Button text="Go" directLink={"https://www.facebook.com/objectJS"}/>
+                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10 '>
+                        <div className='lg:col-span-3 '>
+                            {
+                                FaqData.map((item, i) => {
+                                    const { question, answer } = item
+                                    return (
+                                        <div>
+                                            <CardBox className={`mb-2 `}>
+                                                <div key={i} className={`flex justify-between items-center cursor-pointer duration-1000 ease-in-out `} onClick={() => handleClick(i)}>
+                                                    <MinTitle text={question} className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`} />
+                                                    <div className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`}>
+                                                        {
+                                                            active === i ? <FaMinus /> : <FaPlus />
+                                                        }
+                                                    </div>
+                                                </div>
+                                                {
+                                                    active === i &&
+                                                    <MinTitle text={answer} className="pt-2 !text-textSecondary" />
+                                                }
+                                            </CardBox>
+                                        </div>
+                                    )
+                                })
+                            }
+
                         </div>
-                        
+                        <div className='lg:col-span-2 '>
+                            <CardBox>
+                                <div className=' w-[85%] h-[85%] m-auto'>
+                                    <img src={agency} alt="" className='w-full h-full rounded-full ' />
+                                </div>
+                                <div className='flex justify-between items-center lg:mt-6 '>
+                                    <MidTitle text="Know About ObJect ??" />
+                                    <Button text="Go" directLink={"https://www.facebook.com/objectJS"} />
+                                </div>
+                            </CardBox>
+                        </div>
                     </div>
-                </div>
-                
-                    <TestimonialSlider />
-                
+                </CardBox>
+
+                <TestimonialSlider />
+
             </Container>
         </div>
     )

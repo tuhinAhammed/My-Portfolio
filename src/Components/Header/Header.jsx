@@ -48,7 +48,7 @@ const Header = () => {
 
     <div className='mb-[80px] md:mb-[100px] lg:mb-[108px]'>
       <Container className="">
-        <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[200px]   border-[1px] border-tertiary font-semibold shadow-xl fixed w-[85%] z-50 md:rounded-lg shadow-[0_10px_15px_rgba(0,0,0,0.3),_0_4px_6px_rgba(0,0,0,0.1)] ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
+        <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[150px]   border-[1px] border-tertiary border-opacity-[0.6] font-semibold  fixed w-[85%] z-50 md:rounded-lg shadow-primary-shadow lg:shadow-header-shadow ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
           <div className="" >
             <NavLink to={"/"} > <img src={Logo} className="w-[80px] md:w-[120px]" alt="" /> </NavLink>
           </div>

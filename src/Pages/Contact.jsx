@@ -18,7 +18,9 @@ const Contact = () => {
             <ContactForm />
           </CardBox>
         </Flex>
+        <CardBox className="mt-5">
         <SocialLink className="mt-5"/>
+        </CardBox>
       </Container>
     </div>
   )

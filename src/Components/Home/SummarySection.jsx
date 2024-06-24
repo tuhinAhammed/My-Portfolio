@@ -35,9 +35,9 @@ const SummarySection = () => {
     <div className='color-primary '>
       <MidTitle text="Title" className="group-hover:text-theme text-theme " />
       <MidTitle text="MERN Stack" className=" text-3xl group-hover:text-theme duration-300" />
-      <MidTitle text="Developer" className="text-right text-3xl opacity-[0.5] z-auto" />
+      <MidTitle text="Developer" className="text-right text-3xl opacity-[0.5] z-auto pb-7" />
       <a href={resume} download onClick={handleDownload}>
-        <div className="resume cursor-pointer flex justify-between items-center mt-5 group transition  delay-1000">
+        <div className="resume cursor-pointer flex justify-between items-center  group transition  delay-1000">
           <MinTitle text="My Resume" className="group-hover:text-theme duration-300" />
           <FaDownload className='text-2xl animate-bounce text-primary group-hover:text-theme' />
         </div>
