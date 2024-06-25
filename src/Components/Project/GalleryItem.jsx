@@ -13,7 +13,7 @@ const GalleryItem = ({id , projectName , projectDesc , liveLink , sourceLink , p
         <Button directLink={sourceLink} text="Source Code" className="!rounded-md !px-1 !py-1 lg:!px-2 lg:!py-2 hover:!border-primary hover:!text-primary md:mt-0 mt-4"  />
       </div>
     </div>
-    <div className='w-full h-[30vh]'>
+    <div className='w-full h-[26vh]'>
 
     <img src={projectImage} alt="" className="w-full h-full" />
     </div>
