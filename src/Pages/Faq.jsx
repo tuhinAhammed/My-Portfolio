@@ -9,6 +9,7 @@ import { FaMinus, FaPlus } from 'react-icons/fa6';
 
 import agency from "../assets/object.jpeg"
 import TestimonialSlider from '../Components/Faq/TestimonialSlider';
+import Logo from '../Components/Logo/Logo';
 
 
 const Faq = () => {
@@ -68,7 +69,7 @@ const Faq = () => {
                 </CardBox>
 
                 <TestimonialSlider />
-
+                
             </Container>
         </div>
     )

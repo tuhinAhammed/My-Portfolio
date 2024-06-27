@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Bars } from 'react-loader-spinner';
+import { BounceLoader, HashLoader, PropagateLoader } from "react-spinners";
 import tailwindConfig from '../../tailwind.config';
 import Container from './Container';
 import { useLocation } from 'react-router-dom';
@@ -7,33 +7,51 @@ import { useLocation } from 'react-router-dom';
 const PagePreloader = ({ children }) => {
   const themeColor = tailwindConfig.theme.extend.colors.theme;
   const [loading, setLoading] = useState(true);
+  const [loaderSize, setLoaderSize] = useState(30); // Default size
   const location = useLocation();
 
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // Adjust the timeout as needed
-
-    return () => clearTimeout(timer);
+    }, 1000); // Adjust the timeout as needed
+    return () => clearTimeout(timer); // Clean up the timer on unmount
   }, [location]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        setLoaderSize(500); // Size for lg devices
+      } else if (window.innerWidth >= 640) {
+        setLoaderSize(200); // Size for md devices
+      } else {
+        setLoaderSize(100); // Size for sm devices
+      }
+    };
+
+    // Initialize size
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  console.log(location.pathname);
 
   return (
     <div>
       {loading ? (
-        <Container className="w-full">
-          <div className="flex items-center w-[25%] h-[80vh] m-auto">
-            <Bars
-              visible={true}
-              height="100%"
-              width="100%"
-              radius="48"
-              color={themeColor}
-              ariaLabel="watch-loading"
-              wrapperStyle={{}}
-              wrapperClass=""
-            />
-          </div>
+        <Container className="w-full h-screen flex items-center justify-center">
+          <BounceLoader
+            className="opacity-[0.4] mt-[-150px]"
+            color={themeColor}
+            size={loaderSize}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
         </Container>
       ) : (
         <div>{children}</div>

@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-import Logo from "../../assets/Logo.png"
-import Button from '../../Layout/Button'
 import Container from '../../Layout/Container'
-import SecondaryButton from '../../Layout/SecondaryButton'
-import Flex from '../../Layout/Flex'
 import PrimaryButton from '../../Layout/PrimaryButton'
-import { RiMenuUnfold4Line2 } from 'react-icons/ri'
 import { ImCross, ImMenu } from 'react-icons/im'
-import { HiMenuAlt1, HiOutlineMenuAlt1 } from 'react-icons/hi'
-import { RxCross2 } from 'react-icons/rx'
-import { TiThMenu } from 'react-icons/ti'
+import Logo from '../Logo/Logo'
+
 export const Links = [
   {
     name: "Home",
@@ -46,13 +40,13 @@ const Header = () => {
   }
   return (
 
-    <div className='mb-[80px] md:mb-[100px] lg:mb-[108px] '>
+    <div className='mb-[80px] md:mb-[100px] lg:mb-[115px] '>
       <Container className="">
         <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[150px]   border-[1px] border-tertiary border-opacity-[0.6] font-semibold  fixed w-[85%] z-50 md:rounded-lg shadow-primary-shadow lg:shadow-header-shadow ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
           <div className="" >
-            <NavLink to={"/"} > <img src={Logo} className="w-[80px] md:w-[120px]" alt="" /> </NavLink>
+            <NavLink to={"/"} > <Logo className=""/> </NavLink>
           </div>
-          <div onClick={handleClick} className='absolute top-3 right-6 cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
+          <div onClick={handleClick} className='absolute top-[25%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
             {
               open ? <ImCross /> : <ImMenu />
             }
