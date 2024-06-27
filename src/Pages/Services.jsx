@@ -78,7 +78,7 @@ const Services = () => {
                                     <ServiceBox serviceTitle="okkkk">
 
                                         <ServiceIcon>
-                                            <service.icon className={`${color} p-4   border-2 ${borderColor}  rounded-full group-hover:text-primary`} />
+                                            <service.icon className={`${color} p-4   border-2 ${borderColor}  rounded-full group-hover:text-primary group-hover:animate-pulse`} />
                                         </ServiceIcon>
                                         <MidTitle text={title} className="group-hover:text-theme duration-300 py-2 md:py-4 lg:py-6 " />
 

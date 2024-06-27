@@ -40,11 +40,11 @@ const Header = () => {
   }
   return (
 
-    <div className='mb-[80px] md:mb-[100px] lg:mb-[115px] '>
+    <div className='mb-[80px] md:mb-[850px] lg:mb-[105px] '>
       <Container className="">
         <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[150px]   border-[1px] border-tertiary border-opacity-[0.6] font-semibold  fixed w-[85%] z-50 md:rounded-lg shadow-primary-shadow lg:shadow-header-shadow ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
           <div className="w-[62%] lg:w-[30%]" >
-            <NavLink to={"/"} > <PrimaryLogo color1="#ff0000" color2="#00ff00" /> </NavLink>
+            <NavLink to={"/"} > <PrimaryLogo className="" /> </NavLink>
           </div>
           <div onClick={handleClick} className='absolute top-[25%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
             {

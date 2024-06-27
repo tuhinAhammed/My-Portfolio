@@ -9,7 +9,7 @@ const CardBox = ({ className, children, shapeImg , shapeCss}) => {
         <img
           src={shapeImg}
           alt=""
-          className={`absolute  text-theme text-[125px] opacity-[0.6]  z-[1] animate-pulse-slow ${shapeCss}`}
+          className={`absolute  text-theme text-[125px] opacity-[0.8]  z-[1] animate-pulse-slow ${shapeCss}`}
         />
       )}
       {children}

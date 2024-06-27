@@ -24,7 +24,7 @@ const TestimonialSlider = () => {
             spaceBetween={30}
             centeredSlides={true}
             autoplay={{
-                delay: 500000,
+                delay: 5000,
                 disableOnInteraction: false,
             }}
             pagination={{
@@ -41,9 +41,9 @@ const TestimonialSlider = () => {
                     return (
 
                         <SwiperSlide className='!bg-transparent '>
-                            <CardBox className={`mt-5 !p-6 lg:!p-10`}>
-                                <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10 py-[40px]">
-                                    <div className='w-[100px] lg:w-full h-[100px] lg:h-[300px] rounded-full mx-auto lg:ml-auto lg:rounded-lg  overflow-hidden lg:col-span-1'>
+                            <CardBox className={` !p-6 lg:!p-10`}>
+                                <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10 py-[0px]">
+                                    <div className='w-[100px] lg:w-full h-[100px] lg:h-[250px] rounded-full mx-auto lg:ml-auto lg:rounded-lg  overflow-hidden lg:col-span-1'>
                                         <img src={testimonialImg} alt="img" className=' rounded-lg  ' />
                                     </div>
                                     <div className="desc lg:col-span-3 text-left">

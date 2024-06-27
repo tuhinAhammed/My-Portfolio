@@ -27,7 +27,7 @@ const Faq = () => {
             <TestimonialSlider />
 
 
-                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10 mt-6'>
+                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10 mt-6 items-center'>
                         <div className='lg:col-span-3 '>
                             {
                                 FaqData.map((item, i) => {
