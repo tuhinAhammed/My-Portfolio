@@ -4,7 +4,7 @@ import tailwindConfig from '../../tailwind.config';
 import Container from './Container';
 import { useLocation } from 'react-router-dom';
 
-const PagePreloader = ({ children }) => {
+const PagePreloader = ({ children , loadingTime}) => {
   const themeColor = tailwindConfig.theme.extend.colors.theme;
   const [loading, setLoading] = useState(true);
   const [loaderSize, setLoaderSize] = useState(30); // Default size
@@ -14,7 +14,7 @@ const PagePreloader = ({ children }) => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Adjust the timeout as needed
+    }, loadingTime); // Adjust the timeout as needed
     return () => clearTimeout(timer); // Clean up the timer on unmount
   }, [location]);
 

@@ -5,13 +5,13 @@ import FemaleImg from "../../assets/testimonialFemale.jpg"
 
 export const testimonialData = [
   {
-    testimonialImg: img,
+    testimonialImg: FemaleImg,
     testimonialDesc: "Skilled Frontend Developer with expertise in HTML, CSS, and JavaScript. With 3 years of experience, I create responsive and user-friendly interfaces that enhance the user experience. Passionate about modern web design trends and best practices.",
     personName: "Emily Johnson",
     personPosition: "Senior Frontend Developer"
   },
   {
-    testimonialImg: FemaleImg,
+    testimonialImg: img,
     testimonialDesc: "Experienced Backend Developer with a solid background in server-side technologies. Over 5 years of experience in building scalable and efficient APIs using Node.js and Express. Adept at database management and optimization.",
     personName: "Michael Brown",
     personPosition: "Backend Developer"

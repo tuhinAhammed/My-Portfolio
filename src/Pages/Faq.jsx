@@ -6,10 +6,9 @@ import MinTitle from '../Layout/MinTitle';
 import MidTitle from '../Layout/MidTitle';
 import Button from '../Layout/Button';
 import { FaMinus, FaPlus } from 'react-icons/fa6';
-
-import agency from "../assets/object.jpeg"
+import Logo from "../assets/demoLogo.png"
 import TestimonialSlider from '../Components/Faq/TestimonialSlider';
-import Logo from '../Components/Logo/Logo';
+
 
 
 const Faq = () => {
@@ -25,9 +24,10 @@ const Faq = () => {
     return (
         <div>
             <Container>
-                <CardBox>
+            <TestimonialSlider />
 
-                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10 '>
+
+                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-5 lg:gap-10 mt-6'>
                         <div className='lg:col-span-3 '>
                             {
                                 FaqData.map((item, i) => {
@@ -56,8 +56,8 @@ const Faq = () => {
                         </div>
                         <div className='lg:col-span-2 '>
                             <CardBox>
-                                <div className=' w-[85%] h-[85%] m-auto'>
-                                    <img src={agency} alt="" className='w-full h-full rounded-full ' />
+                                <div className=' w-[59%] h-[59%] m-auto'>
+                                    <img src={Logo} alt="" className='w-full h-full rounded-full ' />
                                 </div>
                                 <div className='flex justify-between items-center lg:mt-6 '>
                                     <MidTitle text="Know About ObJect ??" />
@@ -66,9 +66,7 @@ const Faq = () => {
                             </CardBox>
                         </div>
                     </div>
-                </CardBox>
 
-                <TestimonialSlider />
                 
             </Container>
         </div>

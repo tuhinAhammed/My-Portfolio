@@ -48,6 +48,7 @@ export default {
       animation: {
         'spin-slow': 'spin 20s linear infinite',
         'pulse-slow' : 'pulse 10s linear infinite',
+        'ping-slow' : 'ping 1s linear infinite',
         leftToRight : 'leftToRight 3s infinite'
       },
       boxShadow: {

@@ -17,17 +17,17 @@ import Services from './Pages/Services.jsx';
 import Faq from './Pages/Faq.jsx';
 import Error from './Pages/Error.jsx';
 import PagePreloader from './Layout/PagePreloader.jsx';
-
+const loadingTime ="1000"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<PagePreloader><Home /></PagePreloader>} />
-      <Route path="/about" element={<PagePreloader><About /></PagePreloader>} />
-      <Route path="/project" element={<PagePreloader><Project /></PagePreloader>} />
-      <Route path="/services" element={<PagePreloader><Services /></PagePreloader>} />
-      <Route path="/contact" element={<PagePreloader><Contact /></PagePreloader>} />
-      <Route path="/faq" element={<PagePreloader><Faq /></PagePreloader>} />
-      <Route path="*" element={<PagePreloader><Error /></PagePreloader>} />
+      <Route path="/" element={<PagePreloader loadingTime={loadingTime}><Home /></PagePreloader >} />
+      <Route path="/about" element={<PagePreloader loadingTime={loadingTime}><About /></PagePreloader>} />
+      <Route path="/project" element={<PagePreloader loadingTime={loadingTime}><Project /></PagePreloader>} />
+      <Route path="/services" element={<PagePreloader loadingTime={loadingTime}><Services /></PagePreloader>} />
+      <Route path="/contact" element={<PagePreloader loadingTime={loadingTime}><Contact /></PagePreloader>} />
+      <Route path="/faq" element={<PagePreloader loadingTime={loadingTime}><Faq /></PagePreloader>} />
+      <Route path="*" element={<PagePreloader loadingTime={loadingTime}><Error /></PagePreloader>} />
     </Route>
   )
 );

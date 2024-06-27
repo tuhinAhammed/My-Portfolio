@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 import Container from '../../Layout/Container'
 import PrimaryButton from '../../Layout/PrimaryButton'
 import { ImCross, ImMenu } from 'react-icons/im'
-import Logo from '../Logo/Logo'
+import PrimaryLogo from '../../Components/Logo/PrimaryLogo'
 
 export const Links = [
   {
@@ -44,14 +44,14 @@ const Header = () => {
       <Container className="">
         <nav className={`md:flex justify-between items-center  text-primary py-4 md:py-4  px-6 text-base backdrop-blur-[150px]   border-[1px] border-tertiary border-opacity-[0.6] font-semibold  fixed w-[85%] z-50 md:rounded-lg shadow-primary-shadow lg:shadow-header-shadow ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
           <div className="w-[62%] lg:w-[30%]" >
-            <NavLink to={"/"} > <Logo color1="#ff0000" color2="#00ff00" /> </NavLink>
+            <NavLink to={"/"} > <PrimaryLogo color1="#ff0000" color2="#00ff00" /> </NavLink>
           </div>
           <div onClick={handleClick} className='absolute top-[25%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
             {
               open ? <ImCross /> : <ImMenu />
             }
           </div>
-          <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent bg-senary  pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100  border-[1px] border-tertiary border-opacity-[0.6] shadow-header-shadow` : `right-[-100%] opacity-0  md:opacity-100 `}  `}>
+          <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent bg-senary pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100  border-[1px] border-tertiary border-opacity-[0.6] shadow-header-shadow` : `right-[-100%] opacity-0  md:opacity-100 `}  `}>
             {
               Links.map((link, index) => (
                 <li className='md:py-0 py-2' key={index}>
