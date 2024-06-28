@@ -46,7 +46,7 @@ const PagePreloader = ({ children , loadingTime}) => {
       {loading ? (
         <Container className="w-full h-screen flex items-center justify-center">
           <BounceLoader
-            className="opacity-[0.4] mt-[-150px]"
+            className="opacity-[0.4] mt-[0px] lg:mt-[-150px]"
             color={themeColor}
             size={loaderSize}
             aria-label="Loading Spinner"

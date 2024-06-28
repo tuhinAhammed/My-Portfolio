@@ -5,7 +5,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import "./styles.css"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
 import { testimonialData } from './TestimonialData';
 import CardBox from '../../Layout/CardBox';
 import { FaQuoteLeft } from 'react-icons/fa6';
@@ -42,13 +41,13 @@ const TestimonialSlider = () => {
 
                         <SwiperSlide className='!bg-transparent '>
                             <CardBox className={` !p-6 lg:!p-10`}>
-                                <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10 py-[0px]">
+                                <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10 py-[20px]">
                                     <div className='w-[100px] lg:w-full h-[100px] lg:h-[250px] rounded-full mx-auto lg:ml-auto lg:rounded-lg  overflow-hidden lg:col-span-1'>
-                                        <img src={testimonialImg} alt="img" className=' rounded-lg  ' />
+                                        <img src={testimonialImg} alt="img" className='rounded-lg  ' />
                                     </div>
                                     <div className="desc lg:col-span-3 text-left">
                                         <FaQuoteLeft className='text-theme text-[40px] lg:text-[80px] leading-none' />
-                                        <MinTitle text={testimonialDesc} className="!text-textSecondary py-2" />
+                                        <MinTitle text={testimonialDesc} className="!text-textSecondary py-2 h-[230px] lg:h-auto" />
                                         <MidTitle text={personName} className="text-theme" />
                                         <MinTitle text={personPosition} />
                                     </div>
