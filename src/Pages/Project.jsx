@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Container from "../Layout/Container"
 import { projectButton, projectData } from "../Components/Project/ProjectData"
 import GalleryItem from '../Components/Project/GalleryItem'
-console.log(projectButton, projectData);
+
 
 const Project = () => {
+
   const buttonLength = projectButton.length
   console.log(buttonLength);
   const [active , setActive] = useState(false)
@@ -21,12 +24,21 @@ const Project = () => {
     // setFilterProject(newFilterProject);
     // console.log(filterProject);
   }
+    // scrolling animation
+    useEffect(() => {
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 120
+      });
+    }, [])
   return (
+
     <div>
       <Container>
 
         {/* buttons  */}
-        <div  className={`md:w-[80%] w-full m-auto btn md:flex justify-center items-center grid grid-cols-2 lg:grid-cols-${buttonLength} md:py-6 py-0 gap-2 lg:gap-4`}>
+        <div  className={`md:w-[80%] w-full m-auto btn md:flex justify-center items-center grid grid-cols-2 lg:grid-cols-${buttonLength} md:py-6 py-0 gap-2 lg:gap-4`} data-aos="fade-up">
           {projectButton.map((item, id) => {
             const { name, value , } = item
             return <button onClick={handleButton} key={id} value={value}    className={`${active === value ? "!bg-theme !text-primary" : ""} px-4 py-1 md:px-6 md:py-3 lg:px-6 lg:py-3 rounded-lg border-2 border-theme bg-transparent hover:!bg-theme hover:!text-primary text-theme`} > {name} </button>
@@ -34,13 +46,13 @@ const Project = () => {
         </div>
 
         {/* project gallary */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mt-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 mt-6 " data-aos="fade-up">
         {
           filterProject &&
           filterProject.map((item, id) => {
             const { projectImage, projectName, projectDesc, liveLink, sourceLink, category } = item
             return (
-              <GalleryItem projectImage={projectImage} projectName={projectName} projectDesc={projectDesc} liveLink={liveLink} sourceLink={sourceLink} category={category}/>
+                <GalleryItem projectImage={projectImage} projectName={projectName} projectDesc={projectDesc} liveLink={liveLink} sourceLink={sourceLink} category={category}  />
             )
           })
         }

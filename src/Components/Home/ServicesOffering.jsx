@@ -1,13 +1,10 @@
 import React from 'react'
 import MidTitle from '../../Layout/MidTitle'
 import Flex from '../../Layout/Flex'
-import LargeTitle from '../../Layout/LargeTitle'
-import SkiledItem from '../../Layout/SkiledItem'
 import Frontend from "../../assets/frontend.png"
 import Backend from "../../assets/backend.png"
 import Api from "../../assets/api.png"
 import App from "../../assets/app.png"
-
 import BoxAction from './BoxAction'
 import { BiSolidLike } from 'react-icons/bi'
 import MinTitle from '../../Layout/MinTitle'

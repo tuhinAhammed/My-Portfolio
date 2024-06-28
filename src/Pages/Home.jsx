@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Container from '../Layout/Container'
 import ProfileSection from '../Components/Home/Profile'
 import ArticleSection from '../Components/Home/ArticleSection'
@@ -16,8 +16,10 @@ import shapeSingleStar from "../assets/shapeSingleStar.webp"
 import shapeCircle from "../assets/shapeCircle.webp"
 import ringShape from "../assets/ringShape.webp"
 
+// scrollin animation for service offering section
 
 const Home = () => {
+  // scrollin animation for service offering section
   return (
     <div className=' '>
       {/* */}
@@ -43,8 +45,8 @@ const Home = () => {
                 <SocialProfile />
               </CardBox>
             </div>
-            <CardBox className=" mt-5  transition  delay-1000" shapeImg ={shapeCircle} shapeCss="w-[25%] top-[-0%] right-[-0%]">
-              <ServicesOffering /> 
+            <CardBox  className=" mt-5  transition  delay-1000" shapeImg ={shapeCircle} shapeCss="w-[25%] top-[-0%] right-[-0%]">
+              <ServicesOffering  /> 
             </CardBox>
           </div>
           <div className="right lg:col-span-1 md:col-span-1">

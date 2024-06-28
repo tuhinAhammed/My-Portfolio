@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -6,7 +6,7 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom';
-
+// third party
 import './index.css';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
@@ -17,6 +17,7 @@ import Services from './Pages/Services.jsx';
 import Faq from './Pages/Faq.jsx';
 import Error from './Pages/Error.jsx';
 import PagePreloader from './Layout/PagePreloader.jsx';
+
 const loadingTime ="1000"
 const router = createBrowserRouter(
   createRoutesFromElements(

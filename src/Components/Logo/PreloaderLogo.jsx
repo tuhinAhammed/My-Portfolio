@@ -8,7 +8,7 @@ const PreloaderLogo = ({ className}) => {
       <div className="logo w-[20px]  lg:w-[60px]">
       <img src={demoLogo} alt="re" className='w-full animate-spin'/>
       </div>
-      <LargeTitle text="BJECT" className="tracking-[2px] !text-[18px]  lg:!text-[80px] !text-theme leading-[0px]"/>
+      <LargeTitle text="BJECT" className="tracking-[2px] !text-[18px] !font-extrabold lg:!text-[80px] !text-theme leading-[0px]"/>
     </div>
     </div>
   );

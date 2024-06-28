@@ -1,6 +1,4 @@
 import React from 'react'
-import MidTitle from './MidTitle'
-import LargeTitle from './LargeTitle'
 import MinTitle from './MinTitle'
 import NumberCounter from './NumberCounter'
 

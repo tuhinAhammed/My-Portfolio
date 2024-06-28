@@ -15,7 +15,7 @@ const RootLayout = () => {
   return (
     <div className='bg-gradient-to-br from-[#24130E] to-[#0A090D] pt-5 '>
       {loading ? (
-       <div className='w-full h-screen flex items-center justify-center w-full'>
+       <div className='w-full h-screen flex items-center justify-center w-full mt-[-30px] lg:mt-none'>
         <PreloaderLogo className="animate-pulse"/>
        </div>
       ) : (

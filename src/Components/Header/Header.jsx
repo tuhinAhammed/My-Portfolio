@@ -24,12 +24,12 @@ export const Links = [
     link: "/project"
   },
   {
-    name: "Contact",
-    link: "/contact"
-  },
-  {
     name: "FAQ",
     link: "/faq"
+  },
+  {
+    name: "Contact",
+    link: "/contact"
   },
 ]
 const Header = () => {

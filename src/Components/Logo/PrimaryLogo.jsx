@@ -5,10 +5,10 @@ const PrimaryLogo = ({ className}) => {
   return (
     <div className={`${className}`}>
       <div className={`flex items-center justify-start gap-x-1 lg:gap-x-1 `}>
-      <div className="logo w-[25px]  lg:w-[40px]">
+      <div className="logo w-[25px]  lg:w-[33px]">
       <img src={demoLogo} alt="re" className='w-full animate-spin-slow'/>
       </div>
-      <LargeTitle text="BJECT" className="tracking-[2px] !text-[24px]  lg:!text-[44px] !text-theme leading-[0px]"/>
+      <LargeTitle text="BJECT" className="tracking-[2px] !text-[24px]  lg:!text-[44px] !font-extrabold !text-theme leading-[0px]"/>
     </div>
     </div>
   );

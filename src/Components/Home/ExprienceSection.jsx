@@ -3,7 +3,7 @@ import Exprience from '../../Layout/Exprience'
 const data = [
   {
     title: "years of exprience",
-    value: "+3"
+    value: "+2"
   },
   {
     title: "Total Project",
