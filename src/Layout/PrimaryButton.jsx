@@ -28,3 +28,7 @@ const PrimaryButton = ({ text, className, link }) => {
 }
 
 export default PrimaryButton
+
+// ermrl;m
+// mdl;2
+// f[3]
