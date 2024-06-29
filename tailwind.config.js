@@ -11,7 +11,7 @@ export default {
         container : "85%"
       },
       colors : {
-        theme : "#8128F6" , //#8128F6
+        theme : 'var(--theme-color)' , //#8128F6
         primary : "#FFFFFF", 
         secondary : "#0D0A0D" ,
         tertiary : "#3F4143", //border - #222426 , #3F4143

@@ -31,10 +31,10 @@ const Faq = () => {
                         <div className='lg:col-span-3 '>
                             {
                                 FaqData.map((item, i) => {
-                                    const { question, answer } = item
+                                    const { question, answer  } = item
                                     return (
                                         <div>
-                                            <CardBox className={`mb-2 `}>
+                                            <CardBox className={`mb-2 `} >
                                                 <div key={i} className={`flex justify-between items-center cursor-pointer duration-1000 ease-in-out `} onClick={() => handleClick(i)}>
                                                     <MinTitle text={question} className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`} />
                                                     <div className={` transition-all duration-300 ease-in-out ${active === i ? "  !text-theme" : "!text-primary"}`}>

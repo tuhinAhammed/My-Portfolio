@@ -39,7 +39,7 @@ const TestimonialSlider = () => {
                     const { testimonialImg, testimonialDesc, personName, personPosition } = item
                     return (
 
-                        <SwiperSlide className='!bg-transparent '>
+                        <SwiperSlide className='!bg-transparent ' key={personName}>
                             <CardBox className={` !p-6 lg:!p-10`}>
                                 <div className="inner grid grid-cols-1 lg:grid-cols-4 gap-100 lg:gap-10 py-[20px]">
                                     <div className='w-[100px] lg:w-full h-[100px] lg:h-[250px] rounded-full mx-auto lg:ml-auto lg:rounded-lg  overflow-hidden lg:col-span-1'>
