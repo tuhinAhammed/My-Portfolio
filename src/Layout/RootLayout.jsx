@@ -5,6 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import PreloaderLogo from "../Components/Logo/PreloaderLogo"
 import ThemeChange from '../Components/Theme/ThemeChange';
 import ModeChange from '../Components/Theme/ModeChange';
+import FacebookChat from '../Components/FacebookChat/FacebookChat';
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ const RootLayout = () => {
           
           <ModeChange className="" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
+          <FacebookChat/>
           <Footer />
         </>
       )}
