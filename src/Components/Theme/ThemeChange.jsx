@@ -14,8 +14,8 @@ const colors = [
     { name: "indigo", colorValue: "#6610F2" },   // Indigo
     { name: "coral", colorValue: "#FF6F61" },    // Coral
     { name: "mint", colorValue: "#3EB489" },     // Mint
-  ];
-  
+];
+
 const ThemeChange = ({ onThemeChange, activeThemeColor }) => {
     const [themeShow, setThemeShow] = useState(true)
     const [activeTheme, setActiveTheme] = useState(activeThemeColor)
@@ -47,19 +47,19 @@ const ThemeChange = ({ onThemeChange, activeThemeColor }) => {
 
             {
                 themeShow ?
-                    <div className=" cardBox relative rounded-xl  border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[3000] cursor-pointer" ref={themeRef}>
-                        <img src={eye} alt="" className="w-12 h-12 p-2" />
+                    <div className=" cardBox relative rounded-md md:rounded-md !border-none  !md:border-[1px] border-tertiary border-opacity-[0.6] cursor-default   bg-[#72727294] hover:bg-[#7272725e] overflow-hidden w-[20px] md:w-[40px] h-[20px] md:h-[40px] p-1 md:p-2  transition-all duration-[3000] cursor-pointer" ref={themeRef}>
+                        <img src={eye} alt="" className=" m-auto" />
                     </div>
                     :
-                    <div className=" cardBox   rounded-xl border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow " ref={themeRef}>
+                    <div className=" cardBox absolute top-[120%] left-[100%] md:top-0 md:left-0  md:relative rounded-md md:rounded-xl border-none md:border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow " ref={themeRef}>
 
-                        <div className='cols-span-1'>
-                            <div className='bg-tertiary rounded-lg grid grid-cols-1 gap-2 p-2 h-full'>
+                        <div className='cols-span-1 '>
+                            <div className='bg-tertiary rounded-sm md:rounded-lg  grid  gap-2 p-2 h-full '>
                                 {
                                     colors.map((color, index) => {
                                         const { name, colorValue } = color
                                         return (
-                                            <div className={` w-6 lg:w-8  h-6 lg:h-8 rounded-full cursor-pointer ${activeTheme === colorValue && "border-2"}`} style={{ backgroundColor: colorValue }} key={name} onClick={(e) => onThemeChange(colorValue)}></div>
+                                            <div className={`w-4 md:w-6 lg:w-8 h-4 l:h-6 lg:h-8 rounded-full cursor-pointer ${activeTheme === colorValue && "border-2"}`} style={{ backgroundColor: colorValue }} key={name} onClick={(e) => onThemeChange(colorValue)}></div>
                                         )
                                     })
                                 }

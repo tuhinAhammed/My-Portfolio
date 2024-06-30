@@ -46,7 +46,7 @@ const Header = () => {
           <div className="w-[62%] lg:w-[30%]" >
             <NavLink to={"/"} > <PrimaryLogo className="" /> </NavLink>
           </div>
-          <div onClick={handleClick} className='absolute top-[25%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
+          <div onClick={handleClick} className='absolute top-[30%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
             {
               open ? <ImCross /> : <ImMenu />
             }

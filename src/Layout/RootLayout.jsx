@@ -29,7 +29,7 @@ const RootLayout = () => {
         <>
           <Header />
           
-          <ModeChange className="fixed" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
+          <ModeChange className="" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
           <Footer />
         </>
