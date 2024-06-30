@@ -4,10 +4,12 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Components/Footer/Footer';
 import PreloaderLogo from "../Components/Logo/PreloaderLogo"
 import ThemeChange from '../Components/Theme/ThemeChange';
+import ModeChange from '../Components/Theme/ModeChange';
 
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
   const [theme , setTheme] = useState("#8128F6")
+
   // Empty dependency array means this effect runs only once after initial render
 
     setTimeout(() => {
@@ -15,10 +17,10 @@ const RootLayout = () => {
     }, 3000);
 
       const handleThemeChange = (colors) => {
-        setTheme(colors);
+          setTheme(colors);
       }
   return (
-    <div className='bg-gradient-to-br from-[#24130E] to-[#0A090D] pt-5 ' style={{ '--theme-color': theme }}>
+    <div className='dark:bg-gradient-to-br dark:from-[#24130E] dark:to-[#0A090D] bg-gradient-to-r from-[#F5E5DD] to-[#eee] pt-5' style={{ '--theme-color': theme }}>
       {loading ? (
        <div className='w-full h-screen flex items-center justify-center w-full mt-[-30px] lg:mt-none'>
         <PreloaderLogo className="animate-pulse"/>
@@ -26,7 +28,8 @@ const RootLayout = () => {
       ) : (
         <>
           <Header />
-          <ThemeChange onThemeChange={handleThemeChange}/>
+          
+          <ModeChange className="fixed" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
           <Footer />
         </>

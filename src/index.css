@@ -11,3 +11,21 @@
     @apply border-theme;
 }
 
+:root {
+    --color-primary: #0D0A0D;
+    --color-secondary: #0D0A0D;
+    --color-tertiary: #B3B6B9;
+    --color-quaternary: #222426;
+    --color-background: #24130E;
+    --color-senary: #fff; /* Light mode senary color */
+    --color-text-secondary: #0D0A0D;
+    --color-button-text-color: #fff;
+  }
+  
+  .dark {
+    --color-senary: #141316; /* Dark mode senary color */
+    --color-tertiary: #3F4143;
+    --color-text-secondary: #B3B6B9;
+    --color-primary: #FFFFFF;
+  }
+  

@@ -10,9 +10,9 @@ const ProfileButton = () => {
     return (
         <div className='py-5 '>
             <Link to ="/about">
-            <button className={`group text-md text-primary px-4 py-1 md:px-6 md:py-3 lg:px-4 lg:py-2 rounded-lg border-2 border-theme bg-theme   transition-all duration-300 flex items-center justify-between m-auto gap-x-2`}>
-                <MinTitle text ="I am Tuhin"/>
-                <span><TbLocationCode className='inline-block text-xl  group-hover:ml-[10px] animate-ping'/></span>
+            <button className={`group text-md  px-4 py-1 md:px-6 md:py-3 lg:px-4 lg:py-2 rounded-lg border-2 border-theme bg-theme   transition-all duration-300 flex items-center justify-between m-auto gap-x-2`}>
+                <MinTitle text ="I am Tuhin" className="!text-buttonTextColor"/>
+                <span><TbLocationCode className='text-buttonTextColor inline-block text-xl  group-hover:ml-[10px] animate-ping'/></span>
             </button>
             </Link>
         </div>

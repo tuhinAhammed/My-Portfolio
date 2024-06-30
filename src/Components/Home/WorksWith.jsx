@@ -23,7 +23,7 @@ const WorksWith = ({className}) => {
             <img src={SocialHover} alt="" className='rounded-full animate-spin-slow duration-500 ' />
           </div>
           <div className=''>
-          <LuGithub className='text-primary text-6xl lg:text-7xl p-4 lg:p-5  rounded-full group-hover:text-theme group-hover:animate-pulse' />
+          <LuGithub className='text-primary text-6xl lg:text-7xl p-4 lg:p-5  rounded-full group-hover:text-theme group-hover:animate-pulse dark:text-primary text-secondary' />
           </div>
         </Link>
     <Link to="https://vercel.com/tuhin-ahammeds-projects" target="_blank" className='relative group transition-transform '>
@@ -31,7 +31,7 @@ const WorksWith = ({className}) => {
             <img src={SocialHover} alt="" className='rounded-full animate-spin-slow duration-500 ' />
           </div>
           <div className=''>
-          <TbView360 className='text-primary text-6xl lg:text-7xl p-4 lg:p-5  rounded-full group-hover:text-theme group-hover:animate-pulse' />
+          <TbView360 className='text-primary text-6xl lg:text-7xl p-4 lg:p-5  rounded-full group-hover:text-theme group-hover:animate-pulse dark:text-primary text-secondary' />
           </div>
         </Link>
         {/* <a href="https://github.com/tuhinAhammed/" target="_blank">

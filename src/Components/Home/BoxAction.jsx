@@ -12,7 +12,7 @@ const BoxAction = ({ title , link , className}) => {
             <Link to={link} >
                 <Flex className={`group worksWith cursor-pointer justify-between items-center  group transition  delay-1000 ${className}`}>
                     <MinTitle text={title} className="group-hover:text-theme  " />
-                    <BsBoxArrowRight className='text-primary text-2xl group-hover:text-theme ' />
+                    <BsBoxArrowRight className='dark:text-primary text-secondary text-2xl group-hover:text-theme ' />
                 </Flex>
             </Link>
         </div>

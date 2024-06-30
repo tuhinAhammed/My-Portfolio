@@ -4,25 +4,21 @@ import eye from "../../assets/eye.png"
 import CardBox from '../../Layout/CardBox'
 import ModeChange from './ModeChange'
 const colors = [
-    {
-        name: "red",
-        colorValue: "#eeeeee"
-    },
-    {
-        name: "green",
-        colorValue: "#1ba002"
-    },
-    {
-        name: "orange",
-        colorValue: "#ff9800"
-    },
-    {
-        name: "tomato",
-        colorValue: "#e91e63"
-    },
-]
-const ThemeChange = ({ onThemeChange }) => {
+    { name: "default", colorValue: "#8128F6" },  // Original Default
+    { name: "red", colorValue: "#DC3545" },      // Red
+    { name: "green", colorValue: "#28A745" },    // Green
+    { name: "gray", colorValue: "gray" },        // Gray
+    { name: "orange", colorValue: "#FD7E14" },   // Orange
+    { name: "cyan", colorValue: "#17A2B8" },     // Cyan
+    { name: "pink", colorValue: "#E83E8C" },     // Pink
+    { name: "indigo", colorValue: "#6610F2" },   // Indigo
+    { name: "coral", colorValue: "#FF6F61" },    // Coral
+    { name: "mint", colorValue: "#3EB489" },     // Mint
+  ];
+  
+const ThemeChange = ({ onThemeChange, activeThemeColor }) => {
     const [themeShow, setThemeShow] = useState(true)
+    const [activeTheme, setActiveTheme] = useState(activeThemeColor)
 
     const themeRef = useRef()
     useEffect(() => {
@@ -40,27 +36,34 @@ const ThemeChange = ({ onThemeChange }) => {
         //     document.body.removeEventListener("mouseover", handleMouseOver);
         // }
     }, [])
+
+    useEffect(() => {
+        setActiveTheme(activeThemeColor);
+    }, [activeThemeColor]);
+    console.log(activeTheme);
     return (
 
-        <div className=" z-[999999] !fixed  right-0 top-[50%] top-[50%]" >
+        <div className="" >
 
             {
                 themeShow ?
-                    <div className=" w-[50px] h-[50px] cardBox relative p-2 rounded-xl border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[200] cursor-pointer" ref={themeRef}>
-                        <img src={eye} alt="" className="w-full h-full" />
+                    <div className=" cardBox relative rounded-xl  border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[3000] cursor-pointer" ref={themeRef}>
+                        <img src={eye} alt="" className="w-12 h-12 p-2" />
                     </div>
                     :
-                    <div className=" cardBox relative p-2 rounded-xl border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[200]" ref={themeRef}>
-                        <div className='grid gap-2 grid-cols-3 items-center justify-center'>
-                            <ModeChange />
-                            {
-                                colors.map((color, index) => {
-                                    const { name, colorValue } = color
-                                    return (
-                                        <div className={`w-6 lg:w-8  h-6 lg:h-8 rounded-full cursor-pointer`} style={{ backgroundColor: colorValue }} key={index} onClick={(e) => onThemeChange(colorValue)}></div>
-                                    )
-                                })
-                            }
+                    <div className=" cardBox   rounded-xl border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow " ref={themeRef}>
+
+                        <div className='cols-span-1'>
+                            <div className='bg-tertiary rounded-lg grid grid-cols-1 gap-2 p-2 h-full'>
+                                {
+                                    colors.map((color, index) => {
+                                        const { name, colorValue } = color
+                                        return (
+                                            <div className={` w-6 lg:w-8  h-6 lg:h-8 rounded-full cursor-pointer ${activeTheme === colorValue && "border-2"}`} style={{ backgroundColor: colorValue }} key={name} onClick={(e) => onThemeChange(colorValue)}></div>
+                                        )
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
             }

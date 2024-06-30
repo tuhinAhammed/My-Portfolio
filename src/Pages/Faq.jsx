@@ -56,7 +56,7 @@ const Faq = () => {
                         </div>
                         <div className='lg:col-span-2 '>
                             <CardBox>
-                                <div className=' w-[59%] h-[59%] m-auto'>
+                                <div className=' w-[59%] h-[59%] m-auto bg-theme rounded-full'>
                                     <img src={Logo} alt="" className='w-full h-full rounded-full ' />
                                 </div>
                                 <div className='flex justify-between items-center lg:mt-6 '>

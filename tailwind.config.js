@@ -1,6 +1,7 @@
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -11,14 +12,15 @@ export default {
         container : "85%"
       },
       colors : {
-        theme : 'var(--theme-color)' , //#8128F6
-        primary : "#FFFFFF", 
-        secondary : "#0D0A0D" ,
-        tertiary : "#3F4143", //border - #222426 , #3F4143
-        quaternary : "#222426" , // header
-        background : "#24130E" , // index.jss background 
-        senary : "#141316" , // profile box
-        textSecondary : "#B3B6B9"
+        theme : 'var(--theme-color)', //#8128F6
+        primary : "var(--color-primary)", 
+        secondary : "var(--color-secondary)" ,
+        tertiary : "var(--color-tertiary)", //border - #222426 , #3F4143
+        quaternary : "var(--color-quaternary)", // header
+        background : "var(--color-background)", // index.jss background 
+        senary : "var(--color-senary)", // profile box
+        textSecondary : "var(--color-text-secondary)",
+        buttonTextColor : "var(--color-button-text-color)" // button text color
       },
       fontFamily : {
         primary: ['Kanit', 'sans-serif'],

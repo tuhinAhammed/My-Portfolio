@@ -15,7 +15,7 @@ const CardBox = ({ className, children, shapeImg, shapeCss, aosAnimation }) => {
 
   return (
     <div
-      className={`cardBox relative p-6 rounded-xl border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[200]`} data-aos="zoom-in-down"
+      className={`cardBox relative p-6 rounded-xl dark:border-[1px] border-[#eee] dark:border-tertiary border-opacity-[0.6]  cursor-default dark:bg-senary bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow transition-all duration-[200]`} data-aos="zoom-in-down"
     >
       {shapeImg && (
         <img
