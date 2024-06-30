@@ -6,7 +6,7 @@ import PreloaderLogo from "../Components/Logo/PreloaderLogo"
 import ThemeChange from '../Components/Theme/ThemeChange';
 import ModeChange from '../Components/Theme/ModeChange';
 import FacebookChat from '../Components/FacebookChat/FacebookChat';
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
   const [theme , setTheme] = useState("#8128F6")
@@ -29,10 +29,13 @@ const RootLayout = () => {
       ) : (
         <>
           <Header />
-          
+          <FacebookChat/>
           <ModeChange className="" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
-          <FacebookChat/>
+          <MessengerCustomerChat
+        pageId="153542789835248"
+        appId="460086386839803"
+      />
           <Footer />
         </>
       )}

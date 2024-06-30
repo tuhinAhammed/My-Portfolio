@@ -2,6 +2,7 @@ import React from 'react';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const FacebookChat = () => {
+    console.log("okkkkk");
   return (
     <div>
       <MessengerCustomerChat
