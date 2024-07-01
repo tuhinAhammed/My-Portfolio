@@ -5,16 +5,12 @@ import PagePreloader from '../../Layout/PagePreloader';
 import ThemeChange from './ThemeChange';
 const modeIcons = [
   {
-    icon: <PiSunLight className='text-[12px] md:text-2xl align-center' />,
+    icon: <PiSunLight className='text-[18px] md:text-2xl align-center' />,
     name: "light",
   },
   {
-    icon: <PiMoonLight className='text-[12px] md:text-2xl align-center' />,
+    icon: <PiMoonLight className='text-[18px] md:text-2xl align-center' />,
     name: "dark",
-  },
-  {
-    icon: <GrSystem className='text-[12px] md:text-2xl align-center' />,
-    name: "system"
   },
 
 ]
@@ -60,11 +56,11 @@ const ModeChange = ({ className , onThemeChange , activeThemeColor}) => {
 
   return (
 
-    <div className={`fixed top-[35px] right-[20%] md:top-[14%] md:right-[95%]  md:fixed z-[999999] flex items-center md:grid gap-1 md:gap-2 md:dark:bg-tertiary rounded-lg bg-transparent md:bg-tertiary p-[4px] md:p-2  ${className}`} >
+    <div className={`fixed top-[32px] right-[20%] md:top-[14%] md:right-[95%]  md:fixed z-[999999] flex items-center md:grid gap-1 md:gap-2 md:dark:bg-tertiary rounded-lg bg-transparent md:bg-tertiary p-[4px] md:p-2  ${className}`} >
       
         {
           modeIcons?.map((item) => (
-            <div className={` md:text-[#eee] bg-[#72727294] hover:bg-[#7272725e] p-1 md:p-2 rounded-md  m-auto cursor-pointer  duration-500 ${modeTheme === item.name && " dark:border-[#8A898B] border-[1px] md:border-2 border-theme !dark:text-[#fff] text-theme"}`} key={item.name} onClick={() => handleModeChange(item.name)}>
+            <div className={`text-[#fff] md:text-[#eee] bg-[#72727294] hover:bg-[#7272725e] p-1 md:p-2 rounded-md  m-auto cursor-pointer  duration-500 ${modeTheme === item.name && " dark:border-[#8A898B] border-[1px] md:border-2 border-theme !dark:text-[#fff] text-theme"}`} key={item.name} onClick={() => handleModeChange(item.name)}>
               {item.icon}
             </div>
           ))

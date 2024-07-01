@@ -5,7 +5,6 @@ import Footer from '../Components/Footer/Footer';
 import PreloaderLogo from "../Components/Logo/PreloaderLogo"
 import ThemeChange from '../Components/Theme/ThemeChange';
 import ModeChange from '../Components/Theme/ModeChange';
-import FacebookChat from '../Components/FacebookChat/FacebookChat';
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
   const [theme , setTheme] = useState("#8128F6")
@@ -20,9 +19,9 @@ const RootLayout = () => {
           setTheme(colors);
       }
   return (
-    <div className='dark:bg-gradient-to-br dark:from-[#24130E] dark:to-[#0A090D] bg-gradient-to-r from-[#F5E5DD] to-[#eee] pt-5' style={{ '--theme-color': theme }}>
+    <div className='dark:bg-gradient-to-br dark:from-[#24130E] dark:to-[#0A090D] blur-bg bg-gradient-to-r from-[#F5E5DD] to-[#eee] pt-5' style={{ '--theme-color': theme }}>
       {loading ? (
-       <div className='w-full h-[100vh] !dark:bg-gradient-to-br !dark:from-[#24130E] !dark:to-[#0A090D]  flex items-center justify-center w-full mt-[-30px] lg:mt-none'>
+       <div className='w-full h-[105vh] !dark:bg-gradient-to-br !dark:from-[#24130E] !dark:to-[#0A090D]  flex items-center justify-center w-full mt-[-30px] lg:mt-none '>
         <PreloaderLogo className="animate-pulse"/>
        </div>
       ) : (
@@ -30,7 +29,6 @@ const RootLayout = () => {
           <Header />
           <ModeChange className="" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
-          <FacebookChat/>
           <Footer />
         </>
       )}

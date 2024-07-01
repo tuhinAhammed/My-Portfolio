@@ -3,8 +3,9 @@ import { Link, NavLink } from 'react-router-dom'
 
 import Container from '../../Layout/Container'
 import PrimaryButton from '../../Layout/PrimaryButton'
-import { ImCross, ImMenu } from 'react-icons/im'
 import PrimaryLogo from '../../Components/Logo/PrimaryLogo'
+import { HiMenuAlt1 } from 'react-icons/hi'
+import { RxCross2 } from 'react-icons/rx'
 
 export const Links = [
   {
@@ -43,12 +44,12 @@ const Header = () => {
     <div className='mb-[80px] md:mb-[850px] lg:mb-[105px] '>
       <Container className="">
         <nav className={`md:flex justify-between items-center  dark:text-primary text-secondary py-4 md:py-4  px-6 text-base dark:backdrop-blur-[150px] dark:bg-transparent bg-senary   border-[1px] dark:border-tertiary border-opacity-[0.6] font-semibold  fixed w-[85%] z-50 md:rounded-lg shadow-primary-shadow lg:shadow-header-shadow ${open ? ' rounded-t-lg' : 'rounded-lg '} `} >
-          <div className="w-[62%] lg:w-[30%]" >
+          <div className="w-[62%] lg:w-[20%]" >
             <NavLink to={"/"} > <PrimaryLogo className="" /> </NavLink>
           </div>
-          <div onClick={handleClick} className='absolute top-[30%]  right-[6%] cursor-pointer md:hidden text-md text-theme    rounded-sm font-extrabold p-1 '>
+          <div onClick={handleClick} className='absolute top-[27%]  right-[6%] cursor-pointer md:hidden  text-xl w-[27px] h-[27px] text-theme border-[1px] border-theme   rounded-md font-extrabold p-[0px] grid justify-center items-center '>
             {
-              open ? <ImCross /> : <ImMenu />
+              open ? <RxCross2 /> : <HiMenuAlt1 />
             }
           </div>
           <ul className={`menu  md:flex md:justify-end items-center gap-x-8 md:py-0 py-6   transition-all duration-300 else-in md:static absolute   w-full md:w-auto md:pl-0 md:bg-transparent bg-senary pl-5 top-[100%] md:top-[0] rounded-b-lg ${open ? `right-[0%] md:right-0 opacity-100  border-[1px] border-tertiary border-opacity-[0.6] shadow-header-shadow` : `right-[-100%] opacity-0  md:opacity-100 `}  `}>
@@ -60,7 +61,7 @@ const Header = () => {
               ))
             }
             <li className="md:mt-0 mt-5">
-              <NavLink ><PrimaryButton link="contact" text="Let's Talk" /></NavLink>
+              <NavLink ><PrimaryButton link="contact" text="Let's Connect" /></NavLink>
             </li>
 
           </ul>
