@@ -5,7 +5,7 @@ import { FaDownload } from 'react-icons/fa6'
 // react toastify
 import { Bounce, Flip, Slide, ToastContainer, Zoom, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import resume from "../../assets/Resume/tuhinResume.pdf"
+import resume from "../../assets/tuhinResume.pdf"
 const SummarySection = () => {
   // const handleDownload = () => {
   //   // toast.success("Download successfully done!", {
