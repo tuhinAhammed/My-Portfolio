@@ -1,13 +1,16 @@
+'use client'
 import React from 'react';
-import { FacebookProvider, CustomChat } from 'react-facebook';
+import MessengerChatPlugin from 'react-messenger-chat-plugin';
 
 const FacebookChat = () => {
     console.log("okkkkk");
   return (
     <div>
-      <FacebookProvider appId="460086386839803" chatSupport>
-        <CustomChat pageId="153542789835248" minimized={true}/>
-      </FacebookProvider>  
+      <h1>Welcome to My Website</h1>
+      <MessengerChatPlugin
+        pageId="153542789835248"
+        appId="460086386839803"
+      />
     </div>
   );
 }
