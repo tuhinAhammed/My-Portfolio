@@ -56,7 +56,7 @@ const ModeChange = ({ className , onThemeChange , activeThemeColor}) => {
 
   return (
 
-    <div className={`fixed top-[32px] right-[20%] md:top-[14%] md:right-[95%]  md:fixed z-[999999] flex items-center md:grid gap-1 md:gap-2 md:dark:bg-tertiary rounded-lg bg-transparent md:bg-tertiary p-[4px] md:p-2  ${className}`} >
+    <div className={`fixed top-[32px] right-[21%] md:top-[14%] md:right-[95%]  md:fixed z-[999999] flex items-center md:grid gap-1 md:gap-2 md:dark:bg-tertiary rounded-lg bg-transparent md:bg-tertiary p-[4px] md:p-2  ${className}`} >
       
         {
           modeIcons?.map((item) => (
