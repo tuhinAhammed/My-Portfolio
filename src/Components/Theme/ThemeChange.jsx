@@ -1,8 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { useEffect } from 'react'
 import eye from "../../assets/eye.png"
-import CardBox from '../../Layout/CardBox'
-import ModeChange from './ModeChange'
+
 const colors = [
     { name: "default", colorValue: "#8128F6" },  // Original Default
     { name: "red", colorValue: "#DC3545" },      // Red
@@ -47,8 +46,8 @@ const ThemeChange = ({ onThemeChange, activeThemeColor }) => {
 
             {
                 themeShow ?
-                    <div className=" cardBox relative rounded-md md:rounded-md !border-none  !md:border-[1px] border-tertiary border-opacity-[0.6] cursor-default   bg-[#72727294] hover:bg-[#7272725e] overflow-hidden w-[20px] md:w-[40px] h-[20px] md:h-[40px] p-1 md:p-2  transition-all duration-[3000] cursor-pointer" ref={themeRef}>
-                        <img src={eye} alt="" className=" m-auto" />
+                    <div className=" cardBox relative rounded-md md:rounded-md !border-none  !md:border-[1px] border-tertiary border-opacity-[0.6] cursor-default   bg-[#72727294] hover:bg-[#7272725e] overflow-hidden w-[20px] md:w-[40px] h-[20px] md:h-[40px] p-1 md:p-1  transition-all duration-[3000] cursor-pointer" ref={themeRef}>
+                        <img src={eye} alt="" className=" m-auto animate-pulse" />
                     </div>
                     :
                     <div className=" cardBox absolute top-[120%] left-[100%] md:top-0 md:left-0  md:relative rounded-md md:rounded-xl border-none md:border-[1px] border-tertiary border-opacity-[0.6] cursor-default bg-senary overflow-hidden ${className} shadow-primary-shadow hover:shadow-secondary-shadow " ref={themeRef}>

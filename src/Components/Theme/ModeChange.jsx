@@ -21,7 +21,7 @@ const modeIcons = [
 const ModeChange = ({ className , onThemeChange , activeThemeColor}) => {
   const mainIndex = document.documentElement
   const [modeTheme, setModeTheme] = useState(
-    localStorage.getItem("modeTheme") ? localStorage.getItem("modeTheme") : "system"
+    localStorage.getItem("modeTheme") ? localStorage.getItem("modeTheme") : "dark"
   )
   const modeQuery = window.matchMedia("(prefers-color-scheme : dar2)")
   console.log(modeQuery);
