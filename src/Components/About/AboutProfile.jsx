@@ -1,7 +1,5 @@
 import React from 'react'
 import ProfileImg from "../../assets/profile.png"
-import Resize from "../../assets/img-resize.png"
-import Profile from '../Home/Profile'
 
 const AboutProfile = () => {
   return (

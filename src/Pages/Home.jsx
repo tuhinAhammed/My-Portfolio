@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Container from '../Layout/Container'
-import ProfileSection from '../Components/Home/Profile'
+import ProfileSection from '../Components/Home/ProfileSection/Profile'
 import ArticleSection from '../Components/Home/ArticleSection'
 import CardBox from '../Layout/CardBox'
 import SummarySection from '../Components/Home/SummarySection'
