@@ -60,7 +60,7 @@ const ModeChange = ({ className , onThemeChange , activeThemeColor}) => {
       
         {
           modeIcons?.map((item) => (
-            <div className={`text-[#fff] md:text-[#eee] bg-[#72727294] hover:bg-[#7272725e] p-1 md:p-2 rounded-md  m-auto cursor-pointer  duration-500 ${modeTheme === item.name && " dark:border-[#8A898B] border-[1px] md:border-2 border-theme !dark:text-[#fff] text-theme"}`} key={item.name} onClick={() => handleModeChange(item.name)}>
+            <div className={`text-[#fff] md:text-[#eee] bg-[#72727294] hover:bg-[#7272725e] p-1 md:p-2 rounded-md  m-auto cursor-pointer  duration-500 ${modeTheme === item.name && " dark:border-[#8A898B] border-[1px] md:border-2 border-theme  !dark:text-[#eee] "}`} key={item.name} onClick={() => handleModeChange(item.name)}>
               {item.icon}
             </div>
           ))
