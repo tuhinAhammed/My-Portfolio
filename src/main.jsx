@@ -22,13 +22,13 @@ const loadingTime ="1000"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route path="/" element={<PagePreloader loadingTime={loadingTime}><Home /></PagePreloader >} />
-      <Route path="/about" element={<PagePreloader loadingTime={loadingTime}><About /></PagePreloader>} />
-      <Route path="/project" element={<PagePreloader loadingTime={loadingTime}><Project /></PagePreloader>} />
-      <Route path="/services" element={<PagePreloader loadingTime={loadingTime}><Services /></PagePreloader>} />
-      <Route path="/contact" element={<PagePreloader loadingTime={loadingTime}><Contact /></PagePreloader>} />
-      <Route path="/faq" element={<PagePreloader loadingTime={loadingTime}><Faq /></PagePreloader>} />
-      <Route path="*" element={<PagePreloader loadingTime={loadingTime}><Error /></PagePreloader>} />
+      <Route path="/" element={<Home />} />
+      <Route path="/project" element={<Project />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/faq" element={<Faq />} />
+      <Route path="*" element={<Error />} />
     </Route>
   )
 );

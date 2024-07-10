@@ -17,6 +17,7 @@ import calculator from "../../assets/project/calculator.png"
 import orebi from "../../assets/project/orebi.png"
 import countryApp from "../../assets/project/countryApp.png"
 import orebiDashboard from "../../assets/project/orebiDashboard.png"
+import reactSidebar from "../../assets/project/react-sidebar.png"
 
 
 export const projectButton = [
@@ -106,6 +107,14 @@ export const projectData =[
         projectDesc : "This Is a Car Rental Project by HTML , CSS and jS",
         liveLink : "https://rantila-project.vercel.app/" ,
         sourceLink : "https://github.com/tuhinAhammed/rantila_project" ,
+        category : "frontend"
+    },
+    {
+        projectImage : reactSidebar ,
+        projectName : "React Sidebar",
+        projectDesc : "This Is a Clickable Project by React & Tailwind  and jS",
+        liveLink : "https://react-sidebar-live.vercel.app/" ,
+        sourceLink : "https://github.com/tuhinAhammed/React-Sidebar-" ,
         category : "frontend"
     },
     {

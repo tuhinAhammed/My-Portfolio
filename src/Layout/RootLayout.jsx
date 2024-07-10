@@ -5,6 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import PreloaderLogo from "../Components/Logo/PreloaderLogo"
 import ThemeChange from '../Components/Theme/ThemeChange';
 import ModeChange from '../Components/Theme/ModeChange';
+import ScrollToTop from '../utils/scrollToTop.js';
 const RootLayout = () => {
   const [loading, setLoading] = useState(true);
   const [theme , setTheme] = useState("#8128F6")
@@ -27,6 +28,7 @@ const RootLayout = () => {
       ) : (
         <>
           <Header />
+          <ScrollToTop/>
           <ModeChange className="" onThemeChange={handleThemeChange} activeThemeColor={theme}/>
           <Outlet />
           <Footer />
